@@ -1,0 +1,16 @@
+@startuml
+class Reference {
+  Positionx
+  Positionz
+  Positiony
+  Rotationx
+  SetRotation
+  Rotationy
+  Rotationz
+  Rotationw
+  Visible
+  SetPosition
+  Augmentation_Reference
+  Name
+}
+@enduml

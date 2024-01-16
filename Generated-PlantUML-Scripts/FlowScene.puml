@@ -1,0 +1,35 @@
+@startuml
+class generic_bendpoint {
+  Name
+}
+class Condition {
+  ConditionType
+  Timers
+  Detectable_Reference
+  Name
+}
+class Observer {
+  Name
+}
+class Resolve {
+  Name
+}
+class Statechange {
+  Statechange_Reference
+  Name
+}
+class ObjectSpace {
+  ObjectSpace_Reference
+  Name
+}
+class Start {
+  Name
+}
+class End {
+  Name
+}
+Condition "0..*" --> "0..*" Statechange : triggers
+Condition "0..*" --> "0..*" Resolve : triggers
+Statechange "0..*" --> "0..*" Condition : has_condition
+Condition "0..*" --> "0..*" Observer : has_observer
+@enduml

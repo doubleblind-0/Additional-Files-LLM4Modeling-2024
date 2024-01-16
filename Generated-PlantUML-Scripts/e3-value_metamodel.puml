@@ -1,0 +1,24 @@
+@startuml
+class Marketsegment {
+  Name
+}
+class Activity {
+  Name
+}
+class CustomerNeed {
+  Name
+}
+class BoundaryElement {
+  Name
+}
+class Actor {
+  Name
+}
+class e3-Value_bendpoint {
+  Name
+}
+CustomerNeed "0..1" --> "0..1" BoundaryElement : Connectelement
+CustomerNeed "0..1" --> "0..1" CustomerNeed : Connectelement
+BoundaryElement "0..1" --> "0..1" BoundaryElement : Connectelement
+BoundaryElement "0..1" --> "0..1" CustomerNeed : Connectelement
+@enduml

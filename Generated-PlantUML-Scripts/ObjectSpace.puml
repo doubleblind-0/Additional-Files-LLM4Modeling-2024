@@ -1,0 +1,21 @@
+@startuml
+class Detectable {
+  isorigin
+  Image
+  Widthinmeters
+  Object3D
+  Name
+}
+class Augmentation {
+  Image
+  Widthinmeters
+  Typeofaugmentation
+  Object3D
+  Name
+}
+class generic_bendpoint {
+  Name
+}
+Augmentation "0..*" --> "0..*" Augmentation : child
+Detectable "0..*" --> "0..*" Augmentation : anchored
+@enduml

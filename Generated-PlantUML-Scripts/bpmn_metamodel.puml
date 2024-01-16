@@ -1,0 +1,56 @@
+@startuml
+class ExclusiveGateway {
+  Name
+}
+class Start {
+  Name
+}
+class ParallelGateway {
+  Name
+}
+class End {
+  Name
+}
+class message_bendpoint {
+}
+class subsequent_bendpoint {
+}
+class Task {
+  BPMNTable
+  Description
+  ExecutionTimes
+  Name
+}
+ParallelGateway "0..*" --> "0..*" ParallelGateway : subsequent
+ParallelGateway "0..*" --> "0..*" ExclusiveGateway : subsequent
+ParallelGateway "0..*" --> "1..1" Task : subsequent
+ParallelGateway "0..*" --> "1..1" End : subsequent
+ExclusiveGateway "0..*" --> "0..*" ParallelGateway : subsequent
+ExclusiveGateway "0..*" --> "0..*" ExclusiveGateway : subsequent
+ExclusiveGateway "0..*" --> "1..1" Task : subsequent
+ExclusiveGateway "0..*" --> "1..1" End : subsequent
+Task "1..1" --> "0..*" ParallelGateway : subsequent
+Task "1..1" --> "0..*" ExclusiveGateway : subsequent
+Task "1..1" --> "1..1" Task : subsequent
+Task "1..1" --> "1..1" End : subsequent
+Start "1..1" --> "0..*" ParallelGateway : subsequent
+Start "1..1" --> "0..*" ExclusiveGateway : subsequent
+Start "1..1" --> "1..1" Task : subsequent
+Start "1..1" --> "1..1" End : subsequent
+ParallelGateway "0..*" --> "0..*" ParallelGateway : message
+ParallelGateway "0..*" --> "0..*" ExclusiveGateway : message
+ParallelGateway "0..*" --> "1..1" Task : message
+ParallelGateway "0..*" --> "1..1" End : message
+ExclusiveGateway "0..*" --> "0..*" ParallelGateway : message
+ExclusiveGateway "0..*" --> "0..*" ExclusiveGateway : message
+ExclusiveGateway "0..*" --> "1..1" Task : message
+ExclusiveGateway "0..*" --> "1..1" End : message
+Task "1..1" --> "0..*" ParallelGateway : message
+Task "1..1" --> "0..*" ExclusiveGateway : message
+Task "1..1" --> "1..1" Task : message
+Task "1..1" --> "1..1" End : message
+Start "1..1" --> "0..*" ParallelGateway : message
+Start "1..1" --> "0..*" ExclusiveGateway : message
+Start "1..1" --> "1..1" Task : message
+Start "1..1" --> "1..1" End : message
+@enduml

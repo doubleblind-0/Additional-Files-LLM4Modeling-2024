@@ -1,0 +1,25 @@
+@startuml
+class Detectable {
+  Name
+  DetectableType
+  Marker-String
+}
+class Action {
+  Name
+}
+class ActivityandWorkplaceModelBendpoint {
+}
+class Tangible {
+  TangibleType
+  Name
+}
+Action "0..*" --> "0..*" Action : OnEnterActivate
+Action "0..*" --> "0..*" Tangible : OnEnterActivate
+Action "0..*" --> "0..*" Action : OnEnterDeactivate
+Action "0..*" --> "0..*" Tangible : OnEnterDeactivate
+Action "0..*" --> "0..*" Action : OnExitActivate
+Action "0..*" --> "0..*" Tangible : OnExitActivate
+Action "0..*" --> "0..*" Action : OnExitDeactivate
+Action "0..*" --> "0..*" Tangible : OnExitDeactivate
+Tangible "0..*" --> "0..*" Detectable : Attached
+@enduml
