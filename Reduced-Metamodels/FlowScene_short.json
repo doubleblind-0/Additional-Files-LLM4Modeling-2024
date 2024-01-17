@@ -1,0 +1,1236 @@
+{
+  "uuid": "9c71b8fd-c31e-447f-b617-77af5e33f7da",
+  "name": "FlowScene",
+  "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0,
+    "w": 1
+  },
+  "classes": [
+    {
+      "uuid": "466b5a6e-d7ff-46a6-a6eb-53394d9f612e",
+      "name": "generic_bendpoint",
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "is_reusable": null,
+      "is_abstract": null,
+      "attributes": [
+        {
+          "uuid": "d6632c72-89fa-4210-9d01-18e911505608",
+          "name": "Name",
+          "multi_valued": false,
+          "default_value": "\"Name\"",
+          "description": "Name Attribute",
+          "uuid_metaobject": "d6632c72-89fa-4210-9d01-18e911505608",
+          "attribute_type_uuid": "85897325-c2b3-4ca7-8902-8120300a08dc",
+          "attribute_type": {
+            "uuid": "85897325-c2b3-4ca7-8902-8120300a08dc",
+            "name": "String",
+            "pre_defined": true,
+            "regex_value": "^([\\x09\\x0A\\x0D\\x20-\\x7E]|[\\xC2-\\xDF][\\x80-\\xBF]|\\xE0[\\xA0-\\xBF][\\x80-\\xBF]|[\\xE1-\\xEC\\xEE\\xEF][\\x80-\\xBF]{2}|\\xED[\\x80-\\x9F][\\x80-\\xBF]|\\xF0[\\x90-\\xBF][\\x80-\\xBF]{2}|[\\xF1-\\xF3][\\x80-\\xBF]{3}|\\xF4[\\x80-\\x8F][\\x80-\\xBF]{2})*$",
+            "roles": [],
+            "has_table_attribute": [],
+            "description": "Name AttributeType",
+            "uuid_metaobject": "85897325-c2b3-4ca7-8902-8120300a08dc"
+          },
+          "sequence": 1,
+          "ui_component": "text"
+        }
+      ],
+      "class_references": [],
+      "ports": [],
+      "description": "This is the generic bendpoint",
+      "coordinates_2d": null,
+      "uuid_metaobject": "466b5a6e-d7ff-46a6-a6eb-53394d9f612e"
+    },
+    {
+      "uuid": "197f6742-a5c9-4dad-a305-684b573d6e92",
+      "name": "Condition",
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "is_reusable": null,
+      "is_abstract": null,
+      "attributes": [
+        {
+          "uuid": "57c5a17b-09b9-4225-81a8-d5f0f3079538",
+          "name": "Condition Type",
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "multi_valued": null,
+          "default_value": "\"Timer\"",
+          "description": null,
+          "coordinates_2d": null,
+          "uuid_metaobject": "57c5a17b-09b9-4225-81a8-d5f0f3079538",
+          "facets": "Timer|Detect|Voice|Click|Observer",
+          "attribute_type_uuid": "8d77b476-ef09-40c0-a997-92233c4b8636",
+          "attribute_type": {
+            "uuid": "8d77b476-ef09-40c0-a997-92233c4b8636",
+            "name": "Enumeration",
+            "pre_defined": true,
+            "regex_value": "^([\\x09\\x0A\\x0D\\x20-\\x7E]|[\\xC2-\\xDF][\\x80-\\xBF]|\\xE0[\\xA0-\\xBF][\\x80-\\xBF]|[\\xE1-\\xEC\\xEE\\xEF][\\x80-\\xBF]{2}|\\xED[\\x80-\\x9F][\\x80-\\xBF]|\\xF0[\\x90-\\xBF][\\x80-\\xBF]{2}|[\\xF1-\\xF3][\\x80-\\xBF]{3}|\\xF4[\\x80-\\x8F][\\x80-\\xBF]{2})*$",
+            "roles": [],
+            "has_table_attribute": [],
+            "description": null,
+            "uuid_metaobject": "8d77b476-ef09-40c0-a997-92233c4b8636"
+          },
+          "sequence": 2,
+          "ui_component": "dropdown"
+        },
+        {
+          "uuid": "94b9a3fc-1578-40b7-a969-5d39347b2bf1",
+          "name": "Timer (s)",
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "multi_valued": null,
+          "default_value": "0",
+          "description": null,
+          "coordinates_2d": null,
+          "uuid_metaobject": "94b9a3fc-1578-40b7-a969-5d39347b2bf1",
+          "attribute_type_uuid": "6f434afb-8a3a-4500-8287-8c8575340b10",
+          "attribute_type": {
+            "uuid": "6f434afb-8a3a-4500-8287-8c8575340b10",
+            "name": "Integer",
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "pre_defined": true,
+            "regex_value": "^([0-9])*$",
+            "roles": [],
+            "has_table_attribute": [],
+            "description": null,
+            "coordinates_2d": null,
+            "uuid_metaobject": "6f434afb-8a3a-4500-8287-8c8575340b10"
+          },
+          "sequence": 3,
+          "ui_component": "number"
+        },
+        {
+          "uuid": "5c3ecb8a-9ef6-4413-be6f-8c13897b8a0e",
+          "name": "Detectable_Reference",
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "multi_valued": false,
+          "default_value": "",
+          "description": null,
+          "coordinates_2d": null,
+          "uuid_metaobject": "5c3ecb8a-9ef6-4413-be6f-8c13897b8a0e",
+          "attribute_type_uuid": "f1908e75-998c-40d6-b7a1-94cf25f7139d",
+          "attribute_type": {
+            "uuid": "f1908e75-998c-40d6-b7a1-94cf25f7139d",
+            "name": "Detectable_Reference_AttributeType",
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "pre_defined": true,
+            "regex_value": "^([\\x09\\x0A\\x0D\\x20-\\x7E]|[\\xC2-\\xDF][\\x80-\\xBF]|\\xE0[\\xA0-\\xBF][\\x80-\\xBF]|[\\xE1-\\xEC\\xEE\\xEF][\\x80-\\xBF]{2}|\\xED[\\x80-\\x9F][\\x80-\\xBF]|\\xF0[\\x90-\\xBF][\\x80-\\xBF]{2}|[\\xF1-\\xF3][\\x80-\\xBF]{3}|\\xF4[\\x80-\\x8F][\\x80-\\xBF]{2})*$",
+            "roles": [
+              {
+                "uuid": "5fb67225-89a3-4694-8341-6f07ec167c5a",
+                "name": "Detectable_Reference_Role",
+                "rotation": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0,
+                  "w": 1
+                },
+                "class_references": [
+                  {
+                    "uuid": "a8e78bba-087e-407f-974a-18c36d830bc8",
+                    "min": null,
+                    "max": 1
+                  }
+                ],
+                "relationclass_references": [],
+                "scenetype_references": [],
+                "port_references": [],
+                "uuid_metaobject": "5fb67225-89a3-4694-8341-6f07ec167c5a",
+                "description": null,
+                "coordinates_2d": null,
+              }
+            ],
+            "has_table_attribute": [],
+            "description": null,
+            "coordinates_2d": null,
+            "uuid_metaobject": "f1908e75-998c-40d6-b7a1-94cf25f7139d"
+          },
+          "sequence": 4,
+          "ui_component": "reference"
+        },
+        {
+          "uuid": "d6632c72-89fa-4210-9d01-18e911505608",
+          "name": "Name",
+          "multi_valued": false,
+          "default_value": "\"Name\"",
+          "description": "Name Attribute",
+          "uuid_metaobject": "d6632c72-89fa-4210-9d01-18e911505608",
+          "attribute_type_uuid": "85897325-c2b3-4ca7-8902-8120300a08dc",
+          "attribute_type": {
+            "uuid": "85897325-c2b3-4ca7-8902-8120300a08dc",
+            "name": "String",
+            "pre_defined": true,
+            "regex_value": "^([\\x09\\x0A\\x0D\\x20-\\x7E]|[\\xC2-\\xDF][\\x80-\\xBF]|\\xE0[\\xA0-\\xBF][\\x80-\\xBF]|[\\xE1-\\xEC\\xEE\\xEF][\\x80-\\xBF]{2}|\\xED[\\x80-\\x9F][\\x80-\\xBF]|\\xF0[\\x90-\\xBF][\\x80-\\xBF]{2}|[\\xF1-\\xF3][\\x80-\\xBF]{3}|\\xF4[\\x80-\\x8F][\\x80-\\xBF]{2})*$",
+            "roles": [],
+            "has_table_attribute": [],
+            "description": "Name AttributeType",
+            "uuid_metaobject": "85897325-c2b3-4ca7-8902-8120300a08dc"
+          },
+          "sequence": 1,
+          "ui_component": "text"
+        }
+      ],
+      "class_references": [],
+      "ports": [],
+      "description": null,
+      "coordinates_2d": null,
+      "uuid_metaobject": "197f6742-a5c9-4dad-a305-684b573d6e92"
+    },
+    {
+      "uuid": "c111463a-a133-4d0d-a16f-765283e7a0b7",
+      "name": "Observer",
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "is_reusable": null,
+      "is_abstract": null,
+      "attributes": [
+        {
+          "uuid": "d6632c72-89fa-4210-9d01-18e911505608",
+          "name": "Name",
+          "multi_valued": false,
+          "default_value": "\"Name\"",
+          "description": "Name Attribute",
+          "uuid_metaobject": "d6632c72-89fa-4210-9d01-18e911505608",
+          "attribute_type_uuid": "85897325-c2b3-4ca7-8902-8120300a08dc",
+          "attribute_type": {
+            "uuid": "85897325-c2b3-4ca7-8902-8120300a08dc",
+            "name": "String",
+            "pre_defined": true,
+            "regex_value": "^([\\x09\\x0A\\x0D\\x20-\\x7E]|[\\xC2-\\xDF][\\x80-\\xBF]|\\xE0[\\xA0-\\xBF][\\x80-\\xBF]|[\\xE1-\\xEC\\xEE\\xEF][\\x80-\\xBF]{2}|\\xED[\\x80-\\x9F][\\x80-\\xBF]|\\xF0[\\x90-\\xBF][\\x80-\\xBF]{2}|[\\xF1-\\xF3][\\x80-\\xBF]{3}|\\xF4[\\x80-\\x8F][\\x80-\\xBF]{2})*$",
+            "roles": [],
+            "has_table_attribute": [],
+            "description": "Name AttributeType",
+            "uuid_metaobject": "85897325-c2b3-4ca7-8902-8120300a08dc"
+          },
+          "sequence": 1,
+          "ui_component": "text"
+        }
+      ],
+      "class_references": [],
+      "ports": [],
+      "description": null,
+      "coordinates_2d": null,
+      "uuid_metaobject": "c111463a-a133-4d0d-a16f-765283e7a0b7"
+    },
+    {
+      "uuid": "f0902df5-2c30-4148-b460-0dd94ea0b075",
+      "name": "Resolve",
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "is_reusable": null,
+      "is_abstract": null,
+      "attributes": [
+        {
+          "uuid": "d6632c72-89fa-4210-9d01-18e911505608",
+          "name": "Name",
+          "multi_valued": false,
+          "default_value": "\"Name\"",
+          "description": "Name Attribute",
+          "uuid_metaobject": "d6632c72-89fa-4210-9d01-18e911505608",
+          "attribute_type_uuid": "85897325-c2b3-4ca7-8902-8120300a08dc",
+          "attribute_type": {
+            "uuid": "85897325-c2b3-4ca7-8902-8120300a08dc",
+            "name": "String",
+            "pre_defined": true,
+            "regex_value": "^([\\x09\\x0A\\x0D\\x20-\\x7E]|[\\xC2-\\xDF][\\x80-\\xBF]|\\xE0[\\xA0-\\xBF][\\x80-\\xBF]|[\\xE1-\\xEC\\xEE\\xEF][\\x80-\\xBF]{2}|\\xED[\\x80-\\x9F][\\x80-\\xBF]|\\xF0[\\x90-\\xBF][\\x80-\\xBF]{2}|[\\xF1-\\xF3][\\x80-\\xBF]{3}|\\xF4[\\x80-\\x8F][\\x80-\\xBF]{2})*$",
+            "roles": [],
+            "has_table_attribute": [],
+            "description": "Name AttributeType",
+            "uuid_metaobject": "85897325-c2b3-4ca7-8902-8120300a08dc"
+          },
+          "sequence": 1,
+          "ui_component": "text"
+        }
+      ],
+      "class_references": [],
+      "ports": [],
+      "description": null,
+      "coordinates_2d": null,
+      "uuid_metaobject": "f0902df5-2c30-4148-b460-0dd94ea0b075"
+    },
+    {
+      "uuid": "a2c8ad4a-8ea9-4c6b-b792-ef179f9a078d",
+      "name": "Statechange",
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "is_reusable": null,
+      "is_abstract": null,
+      "attributes": [
+        {
+          "uuid": "4e99fd20-3d3e-4282-825f-7f24451a17a4",
+          "name": "Statechange_Reference",
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "multi_valued": false,
+          "default_value": "\"String \" + Math.floor(Math.random() * 100).toString()",
+          "description": null,
+          "coordinates_2d": null,
+          "uuid_metaobject": "4e99fd20-3d3e-4282-825f-7f24451a17a4",
+          "attribute_type_uuid": "049ff423-97ac-4596-8148-23eed689d347",
+          "attribute_type": {
+            "uuid": "049ff423-97ac-4596-8148-23eed689d347",
+            "name": "Statechange_Reference_AttributeType",
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "pre_defined": true,
+            "regex_value": "^([\\x09\\x0A\\x0D\\x20-\\x7E]|[\\xC2-\\xDF][\\x80-\\xBF]|\\xE0[\\xA0-\\xBF][\\x80-\\xBF]|[\\xE1-\\xEC\\xEE\\xEF][\\x80-\\xBF]{2}|\\xED[\\x80-\\x9F][\\x80-\\xBF]|\\xF0[\\x90-\\xBF][\\x80-\\xBF]{2}|[\\xF1-\\xF3][\\x80-\\xBF]{3}|\\xF4[\\x80-\\x8F][\\x80-\\xBF]{2})*$",
+            "roles": [
+              {
+                "uuid": "9ff2d09e-80d8-4e4c-8c99-033bfd0bf7f7",
+                "name": "Statechange_Reference_Role",
+                "rotation": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0,
+                  "w": 1
+                },
+                "class_references": [],
+                "relationclass_references": [],
+                "scenetype_references": [
+                  {
+                    "uuid": "239c5597-6cc9-498a-bf61-432cf85b3835",
+                    "min": null,
+                    "max": 1
+                  }
+                ],
+                "port_references": [],
+                "uuid_metaobject": "9ff2d09e-80d8-4e4c-8c99-033bfd0bf7f7",
+                "description": null,
+                "coordinates_2d": null,
+              }
+            ],
+            "has_table_attribute": [],
+            "description": null,
+            "coordinates_2d": null,
+            "uuid_metaobject": "049ff423-97ac-4596-8148-23eed689d347"
+          },
+          "sequence": 2,
+          "ui_component": "reference"
+        },
+        {
+          "uuid": "d6632c72-89fa-4210-9d01-18e911505608",
+          "name": "Name",
+          "multi_valued": false,
+          "default_value": "\"Name\"",
+          "description": "Name Attribute",
+          "uuid_metaobject": "d6632c72-89fa-4210-9d01-18e911505608",
+          "attribute_type_uuid": "85897325-c2b3-4ca7-8902-8120300a08dc",
+          "attribute_type": {
+            "uuid": "85897325-c2b3-4ca7-8902-8120300a08dc",
+            "name": "String",
+            "pre_defined": true,
+            "regex_value": "^([\\x09\\x0A\\x0D\\x20-\\x7E]|[\\xC2-\\xDF][\\x80-\\xBF]|\\xE0[\\xA0-\\xBF][\\x80-\\xBF]|[\\xE1-\\xEC\\xEE\\xEF][\\x80-\\xBF]{2}|\\xED[\\x80-\\x9F][\\x80-\\xBF]|\\xF0[\\x90-\\xBF][\\x80-\\xBF]{2}|[\\xF1-\\xF3][\\x80-\\xBF]{3}|\\xF4[\\x80-\\x8F][\\x80-\\xBF]{2})*$",
+            "roles": [],
+            "has_table_attribute": [],
+            "description": "Name AttributeType",
+            "uuid_metaobject": "85897325-c2b3-4ca7-8902-8120300a08dc"
+          },
+          "sequence": 1,
+          "ui_component": "text"
+        }
+      ],
+      "class_references": [],
+      "ports": [],
+      "description": "This is the Class for Statechange",
+      "coordinates_2d": null,
+      "uuid_metaobject": "a2c8ad4a-8ea9-4c6b-b792-ef179f9a078d"
+    },
+    {
+      "uuid": "024da7b6-c957-46ac-988b-1aefdc8515ec",
+      "name": "ObjectSpace",
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "is_reusable": null,
+      "is_abstract": null,
+      "attributes": [
+        {
+          "uuid": "9b572830-e9f7-4fc0-bb36-4fd7758f3510",
+          "name": "ObjectSpace_Reference",
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "multi_valued": false,
+          "default_value": "\"String \" + Math.floor(Math.random() * 100).toString()",
+          "description": null,
+          "coordinates_2d": null,
+          "uuid_metaobject": "9b572830-e9f7-4fc0-bb36-4fd7758f3510",
+          "attribute_type_uuid": "51c7bb5b-4218-4f6b-bbc4-fdc67b35e21a",
+          "attribute_type": {
+            "uuid": "51c7bb5b-4218-4f6b-bbc4-fdc67b35e21a",
+            "name": "ObjectSpace_Reference_AttributeType",
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "pre_defined": true,
+            "regex_value": "^([\\x09\\x0A\\x0D\\x20-\\x7E]|[\\xC2-\\xDF][\\x80-\\xBF]|\\xE0[\\xA0-\\xBF][\\x80-\\xBF]|[\\xE1-\\xEC\\xEE\\xEF][\\x80-\\xBF]{2}|\\xED[\\x80-\\x9F][\\x80-\\xBF]|\\xF0[\\x90-\\xBF][\\x80-\\xBF]{2}|[\\xF1-\\xF3][\\x80-\\xBF]{3}|\\xF4[\\x80-\\x8F][\\x80-\\xBF]{2})*$",
+            "roles": [
+              {
+                "uuid": "4dea0dd6-a5e4-4991-b3a4-b5a6df27597d",
+                "name": "ObjectSpace_Reference_Role",
+                "rotation": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0,
+                  "w": 1
+                },
+                "class_references": [],
+                "relationclass_references": [],
+                "scenetype_references": [
+                  {
+                    "uuid": "a3b35b86-2636-4987-8cc4-814f468f6c4b",
+                    "min": null,
+                    "max": 1
+                  }
+                ],
+                "port_references": [],
+                "uuid_metaobject": "4dea0dd6-a5e4-4991-b3a4-b5a6df27597d",
+                "description": null,
+                "coordinates_2d": null,
+              }
+            ],
+            "has_table_attribute": [],
+            "description": null,
+            "coordinates_2d": null,
+            "uuid_metaobject": "51c7bb5b-4218-4f6b-bbc4-fdc67b35e21a"
+          },
+          "sequence": 2,
+          "ui_component": "reference"
+        },
+        {
+          "uuid": "d6632c72-89fa-4210-9d01-18e911505608",
+          "name": "Name",
+          "multi_valued": false,
+          "default_value": "\"Name\"",
+          "description": "Name Attribute",
+          "uuid_metaobject": "d6632c72-89fa-4210-9d01-18e911505608",
+          "attribute_type_uuid": "85897325-c2b3-4ca7-8902-8120300a08dc",
+          "attribute_type": {
+            "uuid": "85897325-c2b3-4ca7-8902-8120300a08dc",
+            "name": "String",
+            "pre_defined": true,
+            "regex_value": "^([\\x09\\x0A\\x0D\\x20-\\x7E]|[\\xC2-\\xDF][\\x80-\\xBF]|\\xE0[\\xA0-\\xBF][\\x80-\\xBF]|[\\xE1-\\xEC\\xEE\\xEF][\\x80-\\xBF]{2}|\\xED[\\x80-\\x9F][\\x80-\\xBF]|\\xF0[\\x90-\\xBF][\\x80-\\xBF]{2}|[\\xF1-\\xF3][\\x80-\\xBF]{3}|\\xF4[\\x80-\\x8F][\\x80-\\xBF]{2})*$",
+            "roles": [],
+            "has_table_attribute": [],
+            "description": "Name AttributeType",
+            "uuid_metaobject": "85897325-c2b3-4ca7-8902-8120300a08dc"
+          },
+          "sequence": 1,
+          "ui_component": "text"
+        }
+      ],
+      "class_references": [],
+      "ports": [
+        {
+          "uuid": "ff6584d5-4f4d-43a1-baa3-7eaa5b85d805",
+          "name": "Origin",
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "uuid_class": "024da7b6-c957-46ac-988b-1aefdc8515ec",
+          "uuid_scene_type": null,
+          "rolePortRef": [],
+          "attributes": [
+            {
+              "uuid": "d6632c72-89fa-4210-9d01-18e911505608",
+              "name": "Name",
+              "multi_valued": false,
+              "default_value": "\"Name\"",
+              "description": "Name Attribute",
+              "uuid_metaobject": "d6632c72-89fa-4210-9d01-18e911505608",
+              "attribute_type_uuid": "85897325-c2b3-4ca7-8902-8120300a08dc",
+              "attribute_type": {
+                "uuid": "85897325-c2b3-4ca7-8902-8120300a08dc",
+                "name": "String",
+                "pre_defined": true,
+                "regex_value": "^([\\x09\\x0A\\x0D\\x20-\\x7E]|[\\xC2-\\xDF][\\x80-\\xBF]|\\xE0[\\xA0-\\xBF][\\x80-\\xBF]|[\\xE1-\\xEC\\xEE\\xEF][\\x80-\\xBF]{2}|\\xED[\\x80-\\x9F][\\x80-\\xBF]|\\xF0[\\x90-\\xBF][\\x80-\\xBF]{2}|[\\xF1-\\xF3][\\x80-\\xBF]{3}|\\xF4[\\x80-\\x8F][\\x80-\\xBF]{2})*$",
+                "roles": [],
+                "has_table_attribute": [],
+                "description": "Name AttributeType",
+                "uuid_metaobject": "85897325-c2b3-4ca7-8902-8120300a08dc"
+              },
+              "sequence": 1,
+              "ui_component": "text"
+            },
+            {
+              "uuid": "5c3ecb8a-9ef6-4413-be6f-8c13897b8a0e",
+              "name": "Detectable_Reference",
+              "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+              },
+              "multi_valued": false,
+              "default_value": "",
+              "description": null,
+              "coordinates_2d": null,
+              "uuid_metaobject": "5c3ecb8a-9ef6-4413-be6f-8c13897b8a0e",
+              "attribute_type_uuid": "f1908e75-998c-40d6-b7a1-94cf25f7139d",
+              "attribute_type": {
+                "uuid": "f1908e75-998c-40d6-b7a1-94cf25f7139d",
+                "name": "Detectable_Reference_AttributeType",
+                "rotation": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0,
+                  "w": 1
+                },
+                "pre_defined": true,
+                "regex_value": "^([\\x09\\x0A\\x0D\\x20-\\x7E]|[\\xC2-\\xDF][\\x80-\\xBF]|\\xE0[\\xA0-\\xBF][\\x80-\\xBF]|[\\xE1-\\xEC\\xEE\\xEF][\\x80-\\xBF]{2}|\\xED[\\x80-\\x9F][\\x80-\\xBF]|\\xF0[\\x90-\\xBF][\\x80-\\xBF]{2}|[\\xF1-\\xF3][\\x80-\\xBF]{3}|\\xF4[\\x80-\\x8F][\\x80-\\xBF]{2})*$",
+                "roles": [
+                  {
+                    "uuid": "5fb67225-89a3-4694-8341-6f07ec167c5a",
+                    "name": "Detectable_Reference_Role",
+                    "rotation": {
+                      "x": 0,
+                      "y": 0,
+                      "z": 0,
+                      "w": 1
+                    },
+                    "class_references": [
+                      {
+                        "uuid": "a8e78bba-087e-407f-974a-18c36d830bc8",
+                        "min": null,
+                        "max": 1
+                      }
+                    ],
+                    "relationclass_references": [],
+                    "scenetype_references": [],
+                    "port_references": [],
+                    "uuid_metaobject": "5fb67225-89a3-4694-8341-6f07ec167c5a",
+                    "description": null,
+                    "coordinates_2d": null,
+                  }
+                ],
+                "has_table_attribute": [],
+                "description": null,
+                "coordinates_2d": null,
+                "uuid_metaobject": "f1908e75-998c-40d6-b7a1-94cf25f7139d"
+              },
+              "sequence": 2,
+              "ui_component": "reference"
+            }
+          ],
+          "uuid_metaobject": "ff6584d5-4f4d-43a1-baa3-7eaa5b85d805",
+          "description": null,
+          "coordinates_2d": null,
+          "x": -4,
+          "y": 0,
+          "z": 0
+        },
+      },
+      {
+        "uuid": "4ff0f069-1f02-4b7a-8032-07ca9fe7ae52",
+        "name": "Exit",
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        },
+        "uuid_class": "024da7b6-c957-46ac-988b-1aefdc8515ec",
+        "uuid_scene_type": null,
+        "rolePortRef": [],
+        "attributes": [
+          {
+            "uuid": "d6632c72-89fa-4210-9d01-18e911505608",
+            "name": "Name",
+            "multi_valued": false,
+            "default_value": "\"Name\"",
+            "description": "Name Attribute",
+            "uuid_metaobject": "d6632c72-89fa-4210-9d01-18e911505608",
+            "attribute_type_uuid": "85897325-c2b3-4ca7-8902-8120300a08dc",
+            "attribute_type": {
+              "uuid": "85897325-c2b3-4ca7-8902-8120300a08dc",
+              "name": "String",
+              "pre_defined": true,
+              "regex_value": "^([\\x09\\x0A\\x0D\\x20-\\x7E]|[\\xC2-\\xDF][\\x80-\\xBF]|\\xE0[\\xA0-\\xBF][\\x80-\\xBF]|[\\xE1-\\xEC\\xEE\\xEF][\\x80-\\xBF]{2}|\\xED[\\x80-\\x9F][\\x80-\\xBF]|\\xF0[\\x90-\\xBF][\\x80-\\xBF]{2}|[\\xF1-\\xF3][\\x80-\\xBF]{3}|\\xF4[\\x80-\\x8F][\\x80-\\xBF]{2})*$",
+              "roles": [],
+              "has_table_attribute": [],
+              "description": "Name AttributeType",
+              "uuid_metaobject": "85897325-c2b3-4ca7-8902-8120300a08dc"
+            },
+            "sequence": 1,
+            "ui_component": "text"
+          }
+        ],
+        "uuid_metaobject": "4ff0f069-1f02-4b7a-8032-07ca9fe7ae52",
+        "description": null,
+        "coordinates_2d": null,
+        "x": 4,
+        "y": 0,
+        "z": 0
+      },
+    }
+  ],
+  "description": "This is the Class for ObjectSpace",
+  "coordinates_2d": null,
+  "uuid_metaobject": "024da7b6-c957-46ac-988b-1aefdc8515ec"
+},
+{
+  "uuid": "4d23c06e-deea-46e5-bd58-fbfd1b60a027",
+  "name": "Start",
+  "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0,
+    "w": 1
+  },
+  "is_reusable": null,
+  "is_abstract": null,
+  "attributes": [
+    {
+      "uuid": "d6632c72-89fa-4210-9d01-18e911505608",
+      "name": "Name",
+      "multi_valued": false,
+      "default_value": "\"Name\"",
+      "description": "Name Attribute",
+      "uuid_metaobject": "d6632c72-89fa-4210-9d01-18e911505608",
+      "attribute_type_uuid": "85897325-c2b3-4ca7-8902-8120300a08dc",
+      "attribute_type": {
+        "uuid": "85897325-c2b3-4ca7-8902-8120300a08dc",
+        "name": "String",
+        "pre_defined": true,
+        "regex_value": "^([\\x09\\x0A\\x0D\\x20-\\x7E]|[\\xC2-\\xDF][\\x80-\\xBF]|\\xE0[\\xA0-\\xBF][\\x80-\\xBF]|[\\xE1-\\xEC\\xEE\\xEF][\\x80-\\xBF]{2}|\\xED[\\x80-\\x9F][\\x80-\\xBF]|\\xF0[\\x90-\\xBF][\\x80-\\xBF]{2}|[\\xF1-\\xF3][\\x80-\\xBF]{3}|\\xF4[\\x80-\\x8F][\\x80-\\xBF]{2})*$",
+        "roles": [],
+        "has_table_attribute": [],
+        "description": "Name AttributeType",
+        "uuid_metaobject": "85897325-c2b3-4ca7-8902-8120300a08dc"
+      },
+      "sequence": 1,
+      "ui_component": "text"
+    }
+  ],
+  "class_references": [],
+  "ports": [],
+  "description": null,
+  "coordinates_2d": null,
+  "uuid_metaobject": "4d23c06e-deea-46e5-bd58-fbfd1b60a027"
+},
+{
+  "uuid": "8929d7a5-0907-4a91-8977-0a0f79ecd907",
+  "name": "End",
+  "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0,
+    "w": 1
+  },
+  "is_reusable": null,
+  "is_abstract": null,
+  "attributes": [
+    {
+      "uuid": "d6632c72-89fa-4210-9d01-18e911505608",
+      "name": "Name",
+      "multi_valued": false,
+      "default_value": "\"Name\"",
+      "description": "Name Attribute",
+      "uuid_metaobject": "d6632c72-89fa-4210-9d01-18e911505608",
+      "attribute_type_uuid": "85897325-c2b3-4ca7-8902-8120300a08dc",
+      "attribute_type": {
+        "uuid": "85897325-c2b3-4ca7-8902-8120300a08dc",
+        "name": "String",
+        "pre_defined": true,
+        "regex_value": "^([\\x09\\x0A\\x0D\\x20-\\x7E]|[\\xC2-\\xDF][\\x80-\\xBF]|\\xE0[\\xA0-\\xBF][\\x80-\\xBF]|[\\xE1-\\xEC\\xEE\\xEF][\\x80-\\xBF]{2}|\\xED[\\x80-\\x9F][\\x80-\\xBF]|\\xF0[\\x90-\\xBF][\\x80-\\xBF]{2}|[\\xF1-\\xF3][\\x80-\\xBF]{3}|\\xF4[\\x80-\\x8F][\\x80-\\xBF]{2})*$",
+        "roles": [],
+        "has_table_attribute": [],
+        "description": "Name AttributeType",
+        "uuid_metaobject": "85897325-c2b3-4ca7-8902-8120300a08dc"
+      },
+      "sequence": 1,
+      "ui_component": "text"
+    }
+  ],
+  "class_references": [],
+  "ports": [],
+  "description": null,
+  "coordinates_2d": null,
+  "uuid_metaobject": "8929d7a5-0907-4a91-8977-0a0f79ecd907"
+}
+],
+"relationclasses": [
+{
+  "uuid": "baf0edd7-1dcf-469f-9a35-cdbfb8e38bfb",
+  "name": "triggers",
+  "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0,
+    "w": 1
+  },
+  "is_reusable": false,
+  "is_abstract": false,
+  "attributes": [
+    {
+      "uuid": "d6632c72-89fa-4210-9d01-18e911505608",
+      "name": "Name",
+      "multi_valued": false,
+      "default_value": "\"Name\"",
+      "description": "Name Attribute",
+      "uuid_metaobject": "d6632c72-89fa-4210-9d01-18e911505608",
+      "attribute_type_uuid": "85897325-c2b3-4ca7-8902-8120300a08dc",
+      "attribute_type": {
+        "uuid": "85897325-c2b3-4ca7-8902-8120300a08dc",
+        "name": "String",
+        "pre_defined": true,
+        "regex_value": "^([\\x09\\x0A\\x0D\\x20-\\x7E]|[\\xC2-\\xDF][\\x80-\\xBF]|\\xE0[\\xA0-\\xBF][\\x80-\\xBF]|[\\xE1-\\xEC\\xEE\\xEF][\\x80-\\xBF]{2}|\\xED[\\x80-\\x9F][\\x80-\\xBF]|\\xF0[\\x90-\\xBF][\\x80-\\xBF]{2}|[\\xF1-\\xF3][\\x80-\\xBF]{3}|\\xF4[\\x80-\\x8F][\\x80-\\xBF]{2})*$",
+        "roles": [],
+        "has_table_attribute": [],
+        "description": "Name AttributeType",
+        "uuid_metaobject": "85897325-c2b3-4ca7-8902-8120300a08dc"
+      },
+      "sequence": 1,
+      "ui_component": "text"
+    }
+  ],
+  "class_references": [],
+  "ports": [],
+  "role_from": "593e333b-8dbb-4706-a87b-a04a4e8d63c5",
+  "role_to": "a1fb8f7f-902f-4ae8-9875-edfc0c6743fd",
+  "roles": [
+    {
+      "uuid": "593e333b-8dbb-4706-a87b-a04a4e8d63c5",
+      "name": "triggers_from",
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "class_references": [
+        {
+          "uuid": "197f6742-a5c9-4dad-a305-684b573d6e92",
+          "min": null,
+          "max": null
+        }
+      ],
+      "relationclass_references": [],
+      "scenetype_references": [],
+      "port_references": [],
+      "uuid_metaobject": "593e333b-8dbb-4706-a87b-a04a4e8d63c5",
+      "description": null,
+      "coordinates_2d": null,
+    },
+    {
+      "uuid": "a1fb8f7f-902f-4ae8-9875-edfc0c6743fd",
+      "name": "triggers_to",
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "class_references": [
+        {
+          "uuid": "a2c8ad4a-8ea9-4c6b-b792-ef179f9a078d",
+          "min": null,
+          "max": null
+        },
+        {
+          "uuid": "f0902df5-2c30-4148-b460-0dd94ea0b075",
+          "min": null,
+          "max": null
+        }
+      ],
+      "relationclass_references": [],
+      "scenetype_references": [],
+      "port_references": [
+        {
+          "uuid": "4ff0f069-1f02-4b7a-8032-07ca9fe7ae52",
+          "min": null,
+          "max": null
+        }
+      ],
+      "uuid_metaobject": "a1fb8f7f-902f-4ae8-9875-edfc0c6743fd",
+      "description": null,
+      "coordinates_2d": null,
+    }
+  ],
+  "relationclass_references": [],
+  "description": null,
+  "coordinates_2d": null,
+  "uuid_metaobject": "baf0edd7-1dcf-469f-9a35-cdbfb8e38bfb",
+  "uuid_class": "baf0edd7-1dcf-469f-9a35-cdbfb8e38bfb",
+  "uuid_class_bendpoint": "466b5a6e-d7ff-46a6-a6eb-53394d9f612e",
+  "bendpoints": "466b5a6e-d7ff-46a6-a6eb-53394d9f612e"
+},
+{
+  "uuid": "c0e690f2-5470-496c-87de-927fe51fca38",
+  "name": "has_condition",
+  "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0,
+    "w": 1
+  },
+  "is_reusable": false,
+  "is_abstract": false,
+  "attributes": [
+    {
+      "uuid": "d6632c72-89fa-4210-9d01-18e911505608",
+      "name": "Name",
+      "multi_valued": false,
+      "default_value": "\"Name\"",
+      "description": "Name Attribute",
+      "uuid_metaobject": "d6632c72-89fa-4210-9d01-18e911505608",
+      "attribute_type_uuid": "85897325-c2b3-4ca7-8902-8120300a08dc",
+      "attribute_type": {
+        "uuid": "85897325-c2b3-4ca7-8902-8120300a08dc",
+        "name": "String",
+        "pre_defined": true,
+        "regex_value": "^([\\x09\\x0A\\x0D\\x20-\\x7E]|[\\xC2-\\xDF][\\x80-\\xBF]|\\xE0[\\xA0-\\xBF][\\x80-\\xBF]|[\\xE1-\\xEC\\xEE\\xEF][\\x80-\\xBF]{2}|\\xED[\\x80-\\x9F][\\x80-\\xBF]|\\xF0[\\x90-\\xBF][\\x80-\\xBF]{2}|[\\xF1-\\xF3][\\x80-\\xBF]{3}|\\xF4[\\x80-\\x8F][\\x80-\\xBF]{2})*$",
+        "roles": [],
+        "has_table_attribute": [],
+        "description": "Name AttributeType",
+        "uuid_metaobject": "85897325-c2b3-4ca7-8902-8120300a08dc"
+      },
+      "sequence": 1,
+      "ui_component": "text"
+    }
+  ],
+  "class_references": [],
+  "ports": [],
+  "role_from": "16666110-ad32-41db-9d02-68cca5cee82f",
+  "role_to": "98d99015-2ec8-4dad-9e76-4fe1792611f0",
+  "roles": [
+    {
+      "uuid": "16666110-ad32-41db-9d02-68cca5cee82f",
+      "name": "has_condition_from",
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "class_references": [
+        {
+          "uuid": "a2c8ad4a-8ea9-4c6b-b792-ef179f9a078d",
+          "min": null,
+          "max": null
+        }
+      ],
+      "relationclass_references": [],
+      "scenetype_references": [],
+      "port_references": [
+        {
+          "uuid": "ff6584d5-4f4d-43a1-baa3-7eaa5b85d805",
+          "min": null,
+          "max": null
+        }
+      ],
+      "uuid_metaobject": "16666110-ad32-41db-9d02-68cca5cee82f",
+      "description": null,
+      "coordinates_2d": null,
+    },
+    {
+      "uuid": "98d99015-2ec8-4dad-9e76-4fe1792611f0",
+      "name": "has_condition_to",
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "class_references": [
+        {
+          "uuid": "197f6742-a5c9-4dad-a305-684b573d6e92",
+          "min": null,
+          "max": null
+        }
+      ],
+      "relationclass_references": [],
+      "scenetype_references": [],
+      "port_references": [],
+      "uuid_metaobject": "98d99015-2ec8-4dad-9e76-4fe1792611f0",
+      "description": null,
+      "coordinates_2d": null,
+    }
+  ],
+  "relationclass_references": [],
+  "description": null,
+  "coordinates_2d": null,
+  "uuid_metaobject": "c0e690f2-5470-496c-87de-927fe51fca38",
+  "uuid_class": "c0e690f2-5470-496c-87de-927fe51fca38",
+  "uuid_class_bendpoint": "466b5a6e-d7ff-46a6-a6eb-53394d9f612e",
+  "bendpoints": "466b5a6e-d7ff-46a6-a6eb-53394d9f612e"
+},
+{
+  "uuid": "681e5680-07e0-4320-9ff4-361d86552038",
+  "name": "has_observer",
+  "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0,
+    "w": 1
+  },
+  "is_reusable": false,
+  "is_abstract": false,
+  "attributes": [
+    {
+      "uuid": "d6632c72-89fa-4210-9d01-18e911505608",
+      "name": "Name",
+      "multi_valued": false,
+      "default_value": "\"Name\"",
+      "description": "Name Attribute",
+      "uuid_metaobject": "d6632c72-89fa-4210-9d01-18e911505608",
+      "attribute_type_uuid": "85897325-c2b3-4ca7-8902-8120300a08dc",
+      "attribute_type": {
+        "uuid": "85897325-c2b3-4ca7-8902-8120300a08dc",
+        "name": "String",
+        "pre_defined": true,
+        "regex_value": "^([\\x09\\x0A\\x0D\\x20-\\x7E]|[\\xC2-\\xDF][\\x80-\\xBF]|\\xE0[\\xA0-\\xBF][\\x80-\\xBF]|[\\xE1-\\xEC\\xEE\\xEF][\\x80-\\xBF]{2}|\\xED[\\x80-\\x9F][\\x80-\\xBF]|\\xF0[\\x90-\\xBF][\\x80-\\xBF]{2}|[\\xF1-\\xF3][\\x80-\\xBF]{3}|\\xF4[\\x80-\\x8F][\\x80-\\xBF]{2})*$",
+        "roles": [],
+        "has_table_attribute": [],
+        "description": "Name AttributeType",
+        "uuid_metaobject": "85897325-c2b3-4ca7-8902-8120300a08dc"
+      },
+      "sequence": 1,
+      "ui_component": "text"
+    }
+  ],
+  "class_references": [],
+  "ports": [],
+  "role_from": "38b651b4-e5ef-4cfd-9f66-7f38904d7523",
+  "role_to": "116f50c9-82ab-467f-891a-21b4f6de7f43",
+  "roles": [
+    {
+      "uuid": "38b651b4-e5ef-4cfd-9f66-7f38904d7523",
+      "name": "has_observer_from",
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "class_references": [
+        {
+          "uuid": "197f6742-a5c9-4dad-a305-684b573d6e92",
+          "min": null,
+          "max": null
+        }
+      ],
+      "relationclass_references": [],
+      "scenetype_references": [],
+      "port_references": [],
+      "uuid_metaobject": "38b651b4-e5ef-4cfd-9f66-7f38904d7523",
+      "description": null,
+      "coordinates_2d": null,
+    },
+    {
+      "uuid": "116f50c9-82ab-467f-891a-21b4f6de7f43",
+      "name": "has_observer_to",
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "class_references": [
+        {
+          "uuid": "c111463a-a133-4d0d-a16f-765283e7a0b7",
+          "min": null,
+          "max": null
+        }
+      ],
+      "relationclass_references": [],
+      "scenetype_references": [],
+      "port_references": [],
+      "uuid_metaobject": "116f50c9-82ab-467f-891a-21b4f6de7f43",
+      "description": null,
+      "coordinates_2d": null,
+    }
+  ],
+  "relationclass_references": [],
+  "description": null,
+  "coordinates_2d": null,
+  "uuid_metaobject": "681e5680-07e0-4320-9ff4-361d86552038",
+  "uuid_class": "681e5680-07e0-4320-9ff4-361d86552038",
+  "uuid_class_bendpoint": "466b5a6e-d7ff-46a6-a6eb-53394d9f612e",
+  "bendpoints": "466b5a6e-d7ff-46a6-a6eb-53394d9f612e"
+},
+{
+  "uuid": "f1540ab8-8059-44c1-80d9-b7d1a4628d0d",
+  "name": "ends",
+  "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0,
+    "w": 1
+  },
+  "is_reusable": false,
+  "is_abstract": false,
+  "attributes": [
+    {
+      "uuid": "d6632c72-89fa-4210-9d01-18e911505608",
+      "name": "Name",
+      "multi_valued": false,
+      "default_value": "\"Name\"",
+      "description": "Name Attribute",
+      "uuid_metaobject": "d6632c72-89fa-4210-9d01-18e911505608",
+      "attribute_type_uuid": "85897325-c2b3-4ca7-8902-8120300a08dc",
+      "attribute_type": {
+        "uuid": "85897325-c2b3-4ca7-8902-8120300a08dc",
+        "name": "String",
+        "pre_defined": true,
+        "regex_value": "^([\\x09\\x0A\\x0D\\x20-\\x7E]|[\\xC2-\\xDF][\\x80-\\xBF]|\\xE0[\\xA0-\\xBF][\\x80-\\xBF]|[\\xE1-\\xEC\\xEE\\xEF][\\x80-\\xBF]{2}|\\xED[\\x80-\\x9F][\\x80-\\xBF]|\\xF0[\\x90-\\xBF][\\x80-\\xBF]{2}|[\\xF1-\\xF3][\\x80-\\xBF]{3}|\\xF4[\\x80-\\x8F][\\x80-\\xBF]{2})*$",
+        "roles": [],
+        "has_table_attribute": [],
+        "description": "Name AttributeType",
+        "uuid_metaobject": "85897325-c2b3-4ca7-8902-8120300a08dc"
+      },
+      "sequence": 1,
+      "ui_component": "text"
+    }
+  ],
+  "class_references": [],
+  "ports": [],
+  "role_from": "ee7b7124-8500-4216-ae4e-970277f825da",
+  "role_to": "911da997-adc7-43d0-8b13-1cf6c34a342b",
+  "roles": [
+    {
+      "uuid": "ee7b7124-8500-4216-ae4e-970277f825da",
+      "name": "ends_from",
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "class_references": [],
+      "relationclass_references": [],
+      "scenetype_references": [],
+      "port_references": [
+        {
+          "uuid": "4ff0f069-1f02-4b7a-8032-07ca9fe7ae52",
+          "min": null,
+          "max": 1
+        }
+      ],
+      "uuid_metaobject": "ee7b7124-8500-4216-ae4e-970277f825da",
+      "description": null,
+      "coordinates_2d": null,
+    },
+    {
+      "uuid": "911da997-adc7-43d0-8b13-1cf6c34a342b",
+      "name": "ends_to",
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "class_references": [
+        {
+          "uuid": "8929d7a5-0907-4a91-8977-0a0f79ecd907",
+          "min": null,
+          "max": null
+        }
+      ],
+      "relationclass_references": [],
+      "scenetype_references": [],
+      "port_references": [],
+      "uuid_metaobject": "911da997-adc7-43d0-8b13-1cf6c34a342b",
+      "description": null,
+      "coordinates_2d": null,
+    }
+  ],
+  "relationclass_references": [],
+  "description": null,
+  "coordinates_2d": null,
+  "uuid_metaobject": "f1540ab8-8059-44c1-80d9-b7d1a4628d0d",
+  "uuid_class": "f1540ab8-8059-44c1-80d9-b7d1a4628d0d",
+  "uuid_class_bendpoint": "466b5a6e-d7ff-46a6-a6eb-53394d9f612e",
+  "bendpoints": "466b5a6e-d7ff-46a6-a6eb-53394d9f612e"
+},
+{
+  "uuid": "9262267d-0b8b-40d5-be3d-a14b8ea1aed7",
+  "name": "starts",
+  "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0,
+    "w": 1
+  },
+  "is_reusable": false,
+  "is_abstract": false,
+  "attributes": [
+    {
+      "uuid": "d6632c72-89fa-4210-9d01-18e911505608",
+      "name": "Name",
+      "multi_valued": false,
+      "default_value": "\"Name\"",
+      "description": "Name Attribute",
+      "uuid_metaobject": "d6632c72-89fa-4210-9d01-18e911505608",
+      "attribute_type_uuid": "85897325-c2b3-4ca7-8902-8120300a08dc",
+      "attribute_type": {
+        "uuid": "85897325-c2b3-4ca7-8902-8120300a08dc",
+        "name": "String",
+        "pre_defined": true,
+        "regex_value": "^([\\x09\\x0A\\x0D\\x20-\\x7E]|[\\xC2-\\xDF][\\x80-\\xBF]|\\xE0[\\xA0-\\xBF][\\x80-\\xBF]|[\\xE1-\\xEC\\xEE\\xEF][\\x80-\\xBF]{2}|\\xED[\\x80-\\x9F][\\x80-\\xBF]|\\xF0[\\x90-\\xBF][\\x80-\\xBF]{2}|[\\xF1-\\xF3][\\x80-\\xBF]{3}|\\xF4[\\x80-\\x8F][\\x80-\\xBF]{2})*$",
+        "roles": [],
+        "has_table_attribute": [],
+        "description": "Name AttributeType",
+        "uuid_metaobject": "85897325-c2b3-4ca7-8902-8120300a08dc"
+      },
+      "sequence": 1,
+      "ui_component": "text"
+    }
+  ],
+  "class_references": [],
+  "ports": [],
+  "role_from": "80d82d13-6908-4365-944f-86f06e824835",
+  "role_to": "0eec1bef-a576-42be-bc89-da0b8bf0e2cb",
+  "roles": [
+    {
+      "uuid": "80d82d13-6908-4365-944f-86f06e824835",
+      "name": "starts_from",
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "class_references": [
+        {
+          "uuid": "4d23c06e-deea-46e5-bd58-fbfd1b60a027",
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "relationclass_references": [],
+      "scenetype_references": [],
+      "port_references": [],
+      "uuid_metaobject": "80d82d13-6908-4365-944f-86f06e824835",
+      "description": null,
+      "coordinates_2d": null,
+    },
+    {
+      "uuid": "0eec1bef-a576-42be-bc89-da0b8bf0e2cb",
+      "name": "starts_to",
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "class_references": [],
+      "relationclass_references": [],
+      "scenetype_references": [],
+      "port_references": [
+        {
+          "uuid": "ff6584d5-4f4d-43a1-baa3-7eaa5b85d805",
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "uuid_metaobject": "0eec1bef-a576-42be-bc89-da0b8bf0e2cb",
+      "description": null,
+      "coordinates_2d": null,
+    }
+  ],
+  "relationclass_references": [],
+  "description": null,
+  "coordinates_2d": null,
+  "uuid_metaobject": "9262267d-0b8b-40d5-be3d-a14b8ea1aed7",
+  "uuid_class": "9262267d-0b8b-40d5-be3d-a14b8ea1aed7",
+  "uuid_class_bendpoint": "466b5a6e-d7ff-46a6-a6eb-53394d9f612e",
+  "bendpoints": "466b5a6e-d7ff-46a6-a6eb-53394d9f612e"
+}
+],
+"attributes": [
+{
+  "uuid": "d6632c72-89fa-4210-9d01-18e911505608",
+  "name": "Name",
+  "multi_valued": false,
+  "default_value": "\"Name\"",
+  "description": "Name Attribute",
+  "uuid_metaobject": "d6632c72-89fa-4210-9d01-18e911505608",
+  "attribute_type_uuid": "85897325-c2b3-4ca7-8902-8120300a08dc",
+  "attribute_type": {
+    "uuid": "85897325-c2b3-4ca7-8902-8120300a08dc",
+    "name": "String",
+    "pre_defined": true,
+    "regex_value": "^([\\x09\\x0A\\x0D\\x20-\\x7E]|[\\xC2-\\xDF][\\x80-\\xBF]|\\xE0[\\xA0-\\xBF][\\x80-\\xBF]|[\\xE1-\\xEC\\xEE\\xEF][\\x80-\\xBF]{2}|\\xED[\\x80-\\x9F][\\x80-\\xBF]|\\xF0[\\x90-\\xBF][\\x80-\\xBF]{2}|[\\xF1-\\xF3][\\x80-\\xBF]{3}|\\xF4[\\x80-\\x8F][\\x80-\\xBF]{2})*$",
+    "roles": [],
+    "has_table_attribute": [],
+    "description": "Name AttributeType",
+    "uuid_metaobject": "85897325-c2b3-4ca7-8902-8120300a08dc"
+  },
+  "sequence": 1,
+  "ui_component": "text"
+}
+],
+"ports": [],
+"roleSceneRef": [],
+"description": null,
+"coordinates_2d": null,
+"uuid_metaobject": "9c71b8fd-c31e-447f-b617-77af5e33f7da"
+}
