@@ -20,5 +20,8 @@ In this folder you find the 10 original metamodels used for the experiments.
 ## Reduced-Metamodels
 In this folder you find the 10 reduced metamodels used for the experiments.
 
-## ChatGPT Prompts
+## ChatGPT-Prompts
 In this folder you find the documentation of the used ChatGPT 4.0 prompts
+
+## Model-Instance-Examples
+In this folder you find some model instance examples used for the experiments.

@@ -1,0 +1,1520 @@
+{
+    "uuid": "fef75a14-371e-4843-aa65-79c2c9b35765",
+    "coordinates_2d": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+    },
+    "relative_coordinate_3d": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+    },
+    "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+    },
+    "custom_variables": {},
+    "uuid_scene_type": "afb0ca37-d4bb-47ab-911d-b4e3eedd1f79",
+    "class_instances": [
+        {
+            "uuid": "7b47ff8d-4a62-49ee-848c-4f031a8e4537",
+            "coordinates_2d": {
+                "x": -1,
+                "y": 3,
+                "z": 0
+            },
+            "relative_coordinate_3d": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+            },
+            "custom_variables": {
+                "x_rel": {
+                    "value": 0
+                },
+                "y_rel": {
+                    "value": -0.7
+                },
+                "z_rel": {
+                    "value": -0.1
+                },
+                "rx": {
+                    "value": 0
+                },
+                "ry": {
+                    "value": 0
+                },
+                "rz": {
+                    "value": 0
+                },
+                "rw": {
+                    "value": 1
+                },
+                "scale": {
+                    "x": 1,
+                    "y": 1,
+                    "z": 1
+                }
+            },
+            "uuid_class": "d40002db-1d52-473f-a104-3b131c38ee7e",
+            "attribute_instance": [
+                {
+                    "uuid": "b5f522a0-01e2-435d-8f2f-888f3afb84fe",
+                    "coordinates_2d": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    },
+                    "relative_coordinate_3d": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    },
+                    "rotation": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0,
+                        "w": 1
+                    },
+                    "custom_variables": {},
+                    "uuid_attribute": "d6632c72-89fa-4210-9d01-18e911505608",
+                    "assigned_uuid_scene_instance": null,
+                    "assigned_uuid_class_instance": "7b47ff8d-4a62-49ee-848c-4f031a8e4537",
+                    "value": "Start",
+                    "table_attributes": [],
+                    "name": "Name"
+                }
+            ],
+            "port_instance": [],
+            "name": "Start Event_7b47ff8d-4a62-49ee-848c-4f031a8e4537"
+        },
+        {
+            "uuid": "f06b7244-0e74-4d80-9126-42cce7012924",
+            "coordinates_2d": {
+                "x": -1,
+                "y": 1,
+                "z": 0
+            },
+            "relative_coordinate_3d": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+            },
+            "custom_variables": {
+                "x_rel": {
+                    "value": 0
+                },
+                "y_rel": {
+                    "value": -0.7
+                },
+                "z_rel": {
+                    "value": 0.1
+                },
+                "rx": {
+                    "value": 0
+                },
+                "ry": {
+                    "value": 0
+                },
+                "rz": {
+                    "value": 0
+                },
+                "rw": {
+                    "value": 1
+                },
+                "scale": {
+                    "x": 1,
+                    "y": 1,
+                    "z": 1
+                }
+            },
+            "uuid_class": "2e3ae247-a04d-450c-aff9-333871d678fb",
+            "attribute_instance": [
+                {
+                    "uuid": "698f0843-33ea-452c-aef8-fd2bb12cf02b",
+                    "coordinates_2d": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    },
+                    "relative_coordinate_3d": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    },
+                    "rotation": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0,
+                        "w": 1
+                    },
+                    "custom_variables": {},
+                    "uuid_attribute": "d6632c72-89fa-4210-9d01-18e911505608",
+                    "assigned_uuid_scene_instance": null,
+                    "assigned_uuid_class_instance": "f06b7244-0e74-4d80-9126-42cce7012924",
+                    "value": "Parallel Gateway",
+                    "table_attributes": [],
+                    "name": "Name"
+                }
+            ],
+            "port_instance": [],
+            "name": "Parallel-Gateway_f06b7244-0e74-4d80-9126-42cce7012924"
+        },
+        {
+            "uuid": "9c0cfffe-bd9c-403a-9aa2-18dc9b5760c0",
+            "coordinates_2d": {
+                "x": -1,
+                "y": -2,
+                "z": 0
+            },
+            "relative_coordinate_3d": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+            },
+            "custom_variables": {
+                "x_rel": {
+                    "value": 0
+                },
+                "y_rel": {
+                    "value": -0.7
+                },
+                "z_rel": {
+                    "value": 0.1
+                },
+                "rx": {
+                    "value": 0
+                },
+                "ry": {
+                    "value": 0
+                },
+                "rz": {
+                    "value": 0
+                },
+                "rw": {
+                    "value": 1
+                },
+                "scale": {
+                    "x": 1,
+                    "y": 1,
+                    "z": 1
+                }
+            },
+            "uuid_class": "2e3ae247-a04d-450c-aff9-333871d678fb",
+            "attribute_instance": [
+                {
+                    "uuid": "30014e92-914b-4c68-b361-c723e8324dd2",
+                    "coordinates_2d": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    },
+                    "relative_coordinate_3d": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    },
+                    "rotation": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0,
+                        "w": 1
+                    },
+                    "custom_variables": {},
+                    "uuid_attribute": "d6632c72-89fa-4210-9d01-18e911505608",
+                    "assigned_uuid_scene_instance": null,
+                    "assigned_uuid_class_instance": "9c0cfffe-bd9c-403a-9aa2-18dc9b5760c0",
+                    "value": "Parallel Gateway",
+                    "table_attributes": [],
+                    "name": "Name"
+                }
+            ],
+            "port_instance": [],
+            "name": "Parallel-Gateway_9c0cfffe-bd9c-403a-9aa2-18dc9b5760c0"
+        },
+        {
+            "uuid": "532cd312-ede2-4ad0-acbe-f0c61a132950",
+            "coordinates_2d": {
+                "x": -1,
+                "y": -4,
+                "z": 0
+            },
+            "relative_coordinate_3d": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+            },
+            "custom_variables": {
+                "x_rel": {
+                    "value": 0
+                },
+                "y_rel": {
+                    "value": -0.7
+                },
+                "z_rel": {
+                    "value": -0.05
+                },
+                "rx": {
+                    "value": 0
+                },
+                "ry": {
+                    "value": 0
+                },
+                "rz": {
+                    "value": 0
+                },
+                "rw": {
+                    "value": 1
+                },
+                "scale": {
+                    "x": 1,
+                    "y": 1,
+                    "z": 1
+                }
+            },
+            "uuid_class": "cc5b0d1b-e8cf-460f-b2a9-b6da776d0984",
+            "attribute_instance": [
+                {
+                    "uuid": "9f037c49-9e12-43e2-a44f-f4f18a18cec2",
+                    "coordinates_2d": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    },
+                    "relative_coordinate_3d": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    },
+                    "rotation": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0,
+                        "w": 1
+                    },
+                    "custom_variables": {},
+                    "uuid_attribute": "d6632c72-89fa-4210-9d01-18e911505608",
+                    "assigned_uuid_scene_instance": null,
+                    "assigned_uuid_class_instance": "532cd312-ede2-4ad0-acbe-f0c61a132950",
+                    "value": "End",
+                    "table_attributes": [],
+                    "name": "Name"
+                }
+            ],
+            "port_instance": [],
+            "name": "End_532cd312-ede2-4ad0-acbe-f0c61a132950"
+        },
+        {
+            "uuid": "74049dc8-7680-4c00-b16e-7b1ff73363a4",
+            "coordinates_2d": {
+                "x": -3.4,
+                "y": -0.4,
+                "z": 0
+            },
+            "relative_coordinate_3d": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+            },
+            "custom_variables": {
+                "x_rel": {
+                    "value": 0
+                },
+                "y_rel": {
+                    "value": 0
+                },
+                "z_rel": {
+                    "value": 0.143
+                },
+                "rx": {
+                    "value": 0
+                },
+                "ry": {
+                    "value": 0
+                },
+                "rz": {
+                    "value": 0
+                },
+                "rw": {
+                    "value": 1
+                },
+                "scale": {
+                    "x": 1,
+                    "y": 1,
+                    "z": 1
+                }
+            },
+            "uuid_class": "77e6925b-229f-44e9-a531-dc72e83eceaa",
+            "attribute_instance": [
+                {
+                    "uuid": "638c02e8-7312-4fd5-92b8-94984031c54a",
+                    "coordinates_2d": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    },
+                    "relative_coordinate_3d": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    },
+                    "rotation": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0,
+                        "w": 1
+                    },
+                    "custom_variables": {},
+                    "uuid_attribute": "6558bcd8-88fb-407f-9eaf-67f3efc4ad9f",
+                    "assigned_uuid_scene_instance": null,
+                    "assigned_uuid_class_instance": "74049dc8-7680-4c00-b16e-7b1ff73363a4",
+                    "value": "",
+                    "table_attributes": [
+                        {
+                            "uuid": "3085928a-3793-4a06-a1e4-d632719c091a",
+                            "coordinates_2d": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 0
+                            },
+                            "relative_coordinate_3d": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 0
+                            },
+                            "rotation": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 0,
+                                "w": 1
+                            },
+                            "custom_variables": {},
+                            "uuid_attribute": "67dabe8f-3790-4bee-89d3-7a7c48167ffe",
+                            "assigned_uuid_scene_instance": null,
+                            "assigned_uuid_class_instance": null,
+                            "value": "String 63",
+                            "table_attributes": [],
+                            "table_attribute_reference": "67dabe8f-3790-4bee-89d3-7a7c48167ffe",
+                            "table_row": 0
+                        },
+                        {
+                            "uuid": "6a25025f-e111-41f1-99e7-3ebbb4993aff",
+                            "coordinates_2d": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 0
+                            },
+                            "relative_coordinate_3d": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 0
+                            },
+                            "rotation": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 0,
+                                "w": 1
+                            },
+                            "custom_variables": {},
+                            "uuid_attribute": "ed7bdd52-9331-4904-9ec3-ca9f2e20968b",
+                            "assigned_uuid_scene_instance": null,
+                            "assigned_uuid_class_instance": null,
+                            "value": "String 11",
+                            "table_attributes": [],
+                            "table_attribute_reference": "ed7bdd52-9331-4904-9ec3-ca9f2e20968b",
+                            "table_row": 0
+                        },
+                        {
+                            "uuid": "cf5d21ac-5d5b-4f44-bc35-aab36880f070",
+                            "coordinates_2d": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 0
+                            },
+                            "relative_coordinate_3d": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 0
+                            },
+                            "rotation": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 0,
+                                "w": 1
+                            },
+                            "custom_variables": {},
+                            "uuid_attribute": "98ea5527-39af-4048-808a-c2f1f19c6461",
+                            "assigned_uuid_scene_instance": null,
+                            "assigned_uuid_class_instance": null,
+                            "value": "String 14",
+                            "table_attributes": [],
+                            "table_attribute_reference": "98ea5527-39af-4048-808a-c2f1f19c6461",
+                            "table_row": 0
+                        }
+                    ],
+                    "name": "BPMN Table"
+                },
+                {
+                    "uuid": "1626db52-f03b-41f4-9cfd-b43bd1717558",
+                    "coordinates_2d": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    },
+                    "relative_coordinate_3d": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    },
+                    "rotation": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0,
+                        "w": 1
+                    },
+                    "custom_variables": {},
+                    "uuid_attribute": "fa0704bd-73be-4bba-ad94-bc34e0ca569b",
+                    "assigned_uuid_scene_instance": null,
+                    "assigned_uuid_class_instance": "74049dc8-7680-4c00-b16e-7b1ff73363a4",
+                    "value": "String 55",
+                    "table_attributes": [],
+                    "name": "Description"
+                },
+                {
+                    "uuid": "7a4175a4-2a5d-461c-8b73-0c7ff366b8c8",
+                    "coordinates_2d": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    },
+                    "relative_coordinate_3d": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    },
+                    "rotation": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0,
+                        "w": 1
+                    },
+                    "custom_variables": {},
+                    "uuid_attribute": "f322210e-39b8-4727-bf1d-0c21cf373471",
+                    "assigned_uuid_scene_instance": null,
+                    "assigned_uuid_class_instance": "74049dc8-7680-4c00-b16e-7b1ff73363a4",
+                    "value": 0,
+                    "table_attributes": [],
+                    "name": "Execution Time (s)"
+                },
+                {
+                    "uuid": "79cece88-cb7e-404a-8358-c1652caed833",
+                    "coordinates_2d": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    },
+                    "relative_coordinate_3d": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    },
+                    "rotation": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0,
+                        "w": 1
+                    },
+                    "custom_variables": {},
+                    "uuid_attribute": "d6632c72-89fa-4210-9d01-18e911505608",
+                    "assigned_uuid_scene_instance": null,
+                    "assigned_uuid_class_instance": "74049dc8-7680-4c00-b16e-7b1ff73363a4",
+                    "value": "Task 1",
+                    "table_attributes": [],
+                    "name": "Name"
+                }
+            ],
+            "port_instance": [],
+            "name": "Task_74049dc8-7680-4c00-b16e-7b1ff73363a4"
+        },
+        {
+            "uuid": "c4def236-cfc7-4e56-b862-a89b9f937cac",
+            "coordinates_2d": {
+                "x": 1.4,
+                "y": -0.5,
+                "z": 0
+            },
+            "relative_coordinate_3d": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+            },
+            "custom_variables": {
+                "x_rel": {
+                    "value": 0
+                },
+                "y_rel": {
+                    "value": 0
+                },
+                "z_rel": {
+                    "value": 0.143
+                },
+                "rx": {
+                    "value": 0
+                },
+                "ry": {
+                    "value": 0
+                },
+                "rz": {
+                    "value": 0
+                },
+                "rw": {
+                    "value": 1
+                },
+                "scale": {
+                    "x": 1,
+                    "y": 1,
+                    "z": 1
+                }
+            },
+            "uuid_class": "77e6925b-229f-44e9-a531-dc72e83eceaa",
+            "attribute_instance": [
+                {
+                    "uuid": "e5dfea18-391e-4e77-9630-e7dbc548ebe5",
+                    "coordinates_2d": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    },
+                    "relative_coordinate_3d": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    },
+                    "rotation": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0,
+                        "w": 1
+                    },
+                    "custom_variables": {},
+                    "uuid_attribute": "6558bcd8-88fb-407f-9eaf-67f3efc4ad9f",
+                    "assigned_uuid_scene_instance": null,
+                    "assigned_uuid_class_instance": "c4def236-cfc7-4e56-b862-a89b9f937cac",
+                    "value": "",
+                    "table_attributes": [
+                        {
+                            "uuid": "95cfff51-0c71-44e7-bdae-82fb01906f0e",
+                            "coordinates_2d": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 0
+                            },
+                            "relative_coordinate_3d": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 0
+                            },
+                            "rotation": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 0,
+                                "w": 1
+                            },
+                            "custom_variables": {},
+                            "uuid_attribute": "67dabe8f-3790-4bee-89d3-7a7c48167ffe",
+                            "assigned_uuid_scene_instance": null,
+                            "assigned_uuid_class_instance": null,
+                            "value": "String 46",
+                            "table_attributes": [],
+                            "table_attribute_reference": "67dabe8f-3790-4bee-89d3-7a7c48167ffe",
+                            "table_row": 0
+                        },
+                        {
+                            "uuid": "e76a1884-2ee0-4625-b5e5-62e56e2ab7bd",
+                            "coordinates_2d": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 0
+                            },
+                            "relative_coordinate_3d": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 0
+                            },
+                            "rotation": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 0,
+                                "w": 1
+                            },
+                            "custom_variables": {},
+                            "uuid_attribute": "ed7bdd52-9331-4904-9ec3-ca9f2e20968b",
+                            "assigned_uuid_scene_instance": null,
+                            "assigned_uuid_class_instance": null,
+                            "value": "String 38",
+                            "table_attributes": [],
+                            "table_attribute_reference": "ed7bdd52-9331-4904-9ec3-ca9f2e20968b",
+                            "table_row": 0
+                        },
+                        {
+                            "uuid": "04a03a49-dbc6-4ab7-afca-1b7924c7417f",
+                            "coordinates_2d": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 0
+                            },
+                            "relative_coordinate_3d": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 0
+                            },
+                            "rotation": {
+                                "x": 0,
+                                "y": 0,
+                                "z": 0,
+                                "w": 1
+                            },
+                            "custom_variables": {},
+                            "uuid_attribute": "98ea5527-39af-4048-808a-c2f1f19c6461",
+                            "assigned_uuid_scene_instance": null,
+                            "assigned_uuid_class_instance": null,
+                            "value": "String 8",
+                            "table_attributes": [],
+                            "table_attribute_reference": "98ea5527-39af-4048-808a-c2f1f19c6461",
+                            "table_row": 0
+                        }
+                    ],
+                    "name": "BPMN Table"
+                },
+                {
+                    "uuid": "0916c64f-138e-4a5d-9d5d-feed0f51bd41",
+                    "coordinates_2d": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    },
+                    "relative_coordinate_3d": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    },
+                    "rotation": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0,
+                        "w": 1
+                    },
+                    "custom_variables": {},
+                    "uuid_attribute": "fa0704bd-73be-4bba-ad94-bc34e0ca569b",
+                    "assigned_uuid_scene_instance": null,
+                    "assigned_uuid_class_instance": "c4def236-cfc7-4e56-b862-a89b9f937cac",
+                    "value": "String 8",
+                    "table_attributes": [],
+                    "name": "Description"
+                },
+                {
+                    "uuid": "e518407d-ca1c-487f-90e0-13216f70e38a",
+                    "coordinates_2d": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    },
+                    "relative_coordinate_3d": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    },
+                    "rotation": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0,
+                        "w": 1
+                    },
+                    "custom_variables": {},
+                    "uuid_attribute": "f322210e-39b8-4727-bf1d-0c21cf373471",
+                    "assigned_uuid_scene_instance": null,
+                    "assigned_uuid_class_instance": "c4def236-cfc7-4e56-b862-a89b9f937cac",
+                    "value": 0,
+                    "table_attributes": [],
+                    "name": "Execution Time (s)"
+                },
+                {
+                    "uuid": "ed2fe86e-ecb6-4fa3-903c-717d1aa9cad9",
+                    "coordinates_2d": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    },
+                    "relative_coordinate_3d": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    },
+                    "rotation": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0,
+                        "w": 1
+                    },
+                    "custom_variables": {},
+                    "uuid_attribute": "d6632c72-89fa-4210-9d01-18e911505608",
+                    "assigned_uuid_scene_instance": null,
+                    "assigned_uuid_class_instance": "c4def236-cfc7-4e56-b862-a89b9f937cac",
+                    "value": "Task 2",
+                    "table_attributes": [],
+                    "name": "Name"
+                }
+            ],
+            "port_instance": [],
+            "name": "Task_c4def236-cfc7-4e56-b862-a89b9f937cac"
+        }
+    ],
+    "role_instances": [],
+    "attribute_instances": [],
+    "port_instances": [],
+    "relationclasses_instances": [
+        {
+            "uuid": "6850e193-dc81-4a1c-87b5-deb737468b9c",
+            "coordinates_2d": {
+                "x": -1.1,
+                "y": 3,
+                "z": 0.1
+            },
+            "relative_coordinate_3d": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+            },
+            "custom_variables": {},
+            "uuid_class": "38a0dbe1-75b2-4678-ac0d-d4fbb7f7ae05",
+            "uuid_relationclass": "38a0dbe1-75b2-4678-ac0d-d4fbb7f7ae05",
+            "attribute_instance": [
+                {
+                    "uuid": "65e88be8-fd6a-4074-b2e1-e35952bc4170",
+                    "coordinates_2d": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    },
+                    "relative_coordinate_3d": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    },
+                    "rotation": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0,
+                        "w": 1
+                    },
+                    "custom_variables": {},
+                    "uuid_attribute": "d6632c72-89fa-4210-9d01-18e911505608",
+                    "assigned_uuid_scene_instance": null,
+                    "assigned_uuid_class_instance": "6850e193-dc81-4a1c-87b5-deb737468b9c",
+                    "value": "Name in subsequent",
+                    "table_attributes": [],
+                    "name": "Name"
+                }
+            ],
+            "port_instance": [],
+            "line_points": [
+                {
+                    "UUID": "7b47ff8d-4a62-49ee-848c-4f031a8e4537",
+                    "Point": {
+                        "x": -1,
+                        "y": 3,
+                        "z": 0
+                    }
+                },
+                {
+                    "UUID": "f06b7244-0e74-4d80-9126-42cce7012924",
+                    "Point": {
+                        "x": -1,
+                        "y": 1,
+                        "z": 0
+                    }
+                }
+            ],
+            "uuid_relationclass_bendpoint": "b9b189da-0dfc-4691-b6c9-198dc3861fc6",
+            "name": "subsequent_6850e193-dc81-4a1c-87b5-deb737468b9c",
+            "role_instance_from": {
+                "uuid": "fa86bc15-0df5-4df6-9920-69917b8255f1",
+                "coordinates_2d": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "relative_coordinate_3d": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                },
+                "custom_variables": {},
+                "uuid_role": "1079d5a8-0b35-4d16-93c2-49b069cfc07b",
+                "uuid_relationclass": "38a0dbe1-75b2-4678-ac0d-d4fbb7f7ae05",
+                "uuid_has_reference_class_instance": "7b47ff8d-4a62-49ee-848c-4f031a8e4537"
+            },
+            "role_instance_to": {
+                "uuid": "9a8ec220-f1e6-4e3f-8af8-6f0e01516bee",
+                "coordinates_2d": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "relative_coordinate_3d": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                },
+                "custom_variables": {},
+                "uuid_role": "f2c856d8-ca17-49fc-b790-769e8162fd4f",
+                "uuid_relationclass": "38a0dbe1-75b2-4678-ac0d-d4fbb7f7ae05",
+                "uuid_has_reference_class_instance": "f06b7244-0e74-4d80-9126-42cce7012924"
+            }
+        },
+        {
+            "uuid": "b17603d9-6825-4823-88b7-5abbf4dac7d2",
+            "coordinates_2d": {
+                "x": -1,
+                "y": 1.2,
+                "z": 0.4
+            },
+            "relative_coordinate_3d": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+            },
+            "custom_variables": {},
+            "uuid_class": "38a0dbe1-75b2-4678-ac0d-d4fbb7f7ae05",
+            "uuid_relationclass": "38a0dbe1-75b2-4678-ac0d-d4fbb7f7ae05",
+            "attribute_instance": [
+                {
+                    "uuid": "b6605001-d877-409c-97d8-e4fc939b2c2c",
+                    "coordinates_2d": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    },
+                    "relative_coordinate_3d": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    },
+                    "rotation": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0,
+                        "w": 1
+                    },
+                    "custom_variables": {},
+                    "uuid_attribute": "d6632c72-89fa-4210-9d01-18e911505608",
+                    "assigned_uuid_scene_instance": null,
+                    "assigned_uuid_class_instance": "b17603d9-6825-4823-88b7-5abbf4dac7d2",
+                    "value": "Name in subsequent",
+                    "table_attributes": [],
+                    "name": "Name"
+                }
+            ],
+            "port_instance": [],
+            "line_points": [
+                {
+                    "UUID": "f06b7244-0e74-4d80-9126-42cce7012924",
+                    "Point": {
+                        "x": -1,
+                        "y": 1,
+                        "z": 0
+                    }
+                },
+                {
+                    "UUID": "74049dc8-7680-4c00-b16e-7b1ff73363a4",
+                    "Point": {
+                        "x": -3.4,
+                        "y": -0.4,
+                        "z": 0
+                    }
+                }
+            ],
+            "uuid_relationclass_bendpoint": "b9b189da-0dfc-4691-b6c9-198dc3861fc6",
+            "name": "subsequent_b17603d9-6825-4823-88b7-5abbf4dac7d2",
+            "role_instance_from": {
+                "uuid": "ce2844a5-6986-471c-9a6b-018193960290",
+                "coordinates_2d": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "relative_coordinate_3d": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                },
+                "custom_variables": {},
+                "uuid_role": "1079d5a8-0b35-4d16-93c2-49b069cfc07b",
+                "uuid_relationclass": "38a0dbe1-75b2-4678-ac0d-d4fbb7f7ae05",
+                "uuid_has_reference_class_instance": "f06b7244-0e74-4d80-9126-42cce7012924"
+            },
+            "role_instance_to": {
+                "uuid": "16455464-d8f9-467d-b634-863e6a8a7391",
+                "coordinates_2d": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "relative_coordinate_3d": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                },
+                "custom_variables": {},
+                "uuid_role": "f2c856d8-ca17-49fc-b790-769e8162fd4f",
+                "uuid_relationclass": "38a0dbe1-75b2-4678-ac0d-d4fbb7f7ae05",
+                "uuid_has_reference_class_instance": "74049dc8-7680-4c00-b16e-7b1ff73363a4"
+            }
+        },
+        {
+            "uuid": "b3f87832-dc2b-4dec-ab93-42e92d049cb6",
+            "coordinates_2d": {
+                "x": -3,
+                "y": -0.1,
+                "z": 0.1
+            },
+            "relative_coordinate_3d": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+            },
+            "custom_variables": {},
+            "uuid_class": "38a0dbe1-75b2-4678-ac0d-d4fbb7f7ae05",
+            "uuid_relationclass": "38a0dbe1-75b2-4678-ac0d-d4fbb7f7ae05",
+            "attribute_instance": [
+                {
+                    "uuid": "7af851e1-6956-4ab8-8758-23159009d981",
+                    "coordinates_2d": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    },
+                    "relative_coordinate_3d": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    },
+                    "rotation": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0,
+                        "w": 1
+                    },
+                    "custom_variables": {},
+                    "uuid_attribute": "d6632c72-89fa-4210-9d01-18e911505608",
+                    "assigned_uuid_scene_instance": null,
+                    "assigned_uuid_class_instance": "b3f87832-dc2b-4dec-ab93-42e92d049cb6",
+                    "value": "Name in subsequent",
+                    "table_attributes": [],
+                    "name": "Name"
+                }
+            ],
+            "port_instance": [],
+            "line_points": [
+                {
+                    "UUID": "74049dc8-7680-4c00-b16e-7b1ff73363a4",
+                    "Point": {
+                        "x": -3.4,
+                        "y": -0.4,
+                        "z": 0
+                    }
+                },
+                {
+                    "UUID": "9c0cfffe-bd9c-403a-9aa2-18dc9b5760c0",
+                    "Point": {
+                        "x": -1,
+                        "y": -2,
+                        "z": 0
+                    }
+                }
+            ],
+            "uuid_relationclass_bendpoint": "b9b189da-0dfc-4691-b6c9-198dc3861fc6",
+            "name": "subsequent_b3f87832-dc2b-4dec-ab93-42e92d049cb6",
+            "role_instance_from": {
+                "uuid": "62a9c118-57e1-46e6-9f28-d123edfb2e8f",
+                "coordinates_2d": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "relative_coordinate_3d": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                },
+                "custom_variables": {},
+                "uuid_role": "1079d5a8-0b35-4d16-93c2-49b069cfc07b",
+                "uuid_relationclass": "38a0dbe1-75b2-4678-ac0d-d4fbb7f7ae05",
+                "uuid_has_reference_class_instance": "74049dc8-7680-4c00-b16e-7b1ff73363a4"
+            },
+            "role_instance_to": {
+                "uuid": "e4664aa6-14bf-43ca-863b-0f9b15962d1a",
+                "coordinates_2d": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "relative_coordinate_3d": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                },
+                "custom_variables": {},
+                "uuid_role": "f2c856d8-ca17-49fc-b790-769e8162fd4f",
+                "uuid_relationclass": "38a0dbe1-75b2-4678-ac0d-d4fbb7f7ae05",
+                "uuid_has_reference_class_instance": "9c0cfffe-bd9c-403a-9aa2-18dc9b5760c0"
+            }
+        },
+        {
+            "uuid": "79fe61ee-b413-4e2b-9e7c-37453dcfc3ab",
+            "coordinates_2d": {
+                "x": -1.1,
+                "y": -2.1,
+                "z": 0.4
+            },
+            "relative_coordinate_3d": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+            },
+            "custom_variables": {},
+            "uuid_class": "38a0dbe1-75b2-4678-ac0d-d4fbb7f7ae05",
+            "uuid_relationclass": "38a0dbe1-75b2-4678-ac0d-d4fbb7f7ae05",
+            "attribute_instance": [
+                {
+                    "uuid": "0befd5c8-1ee4-41b7-b8e4-1f74659deb6f",
+                    "coordinates_2d": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    },
+                    "relative_coordinate_3d": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    },
+                    "rotation": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0,
+                        "w": 1
+                    },
+                    "custom_variables": {},
+                    "uuid_attribute": "d6632c72-89fa-4210-9d01-18e911505608",
+                    "assigned_uuid_scene_instance": null,
+                    "assigned_uuid_class_instance": "79fe61ee-b413-4e2b-9e7c-37453dcfc3ab",
+                    "value": "Name in subsequent",
+                    "table_attributes": [],
+                    "name": "Name"
+                }
+            ],
+            "port_instance": [],
+            "line_points": [
+                {
+                    "UUID": "9c0cfffe-bd9c-403a-9aa2-18dc9b5760c0",
+                    "Point": {
+                        "x": -1,
+                        "y": -2,
+                        "z": 0
+                    }
+                },
+                {
+                    "UUID": "532cd312-ede2-4ad0-acbe-f0c61a132950",
+                    "Point": {
+                        "x": -1,
+                        "y": -4,
+                        "z": 0
+                    }
+                }
+            ],
+            "uuid_relationclass_bendpoint": "b9b189da-0dfc-4691-b6c9-198dc3861fc6",
+            "name": "subsequent_79fe61ee-b413-4e2b-9e7c-37453dcfc3ab",
+            "role_instance_from": {
+                "uuid": "5249456d-92c0-403d-b46f-c81db19015c5",
+                "coordinates_2d": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "relative_coordinate_3d": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                },
+                "custom_variables": {},
+                "uuid_role": "1079d5a8-0b35-4d16-93c2-49b069cfc07b",
+                "uuid_relationclass": "38a0dbe1-75b2-4678-ac0d-d4fbb7f7ae05",
+                "uuid_has_reference_class_instance": "9c0cfffe-bd9c-403a-9aa2-18dc9b5760c0"
+            },
+            "role_instance_to": {
+                "uuid": "d7ddd2e4-e946-4ba5-88c9-b5b9ae7bbb44",
+                "coordinates_2d": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "relative_coordinate_3d": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                },
+                "custom_variables": {},
+                "uuid_role": "f2c856d8-ca17-49fc-b790-769e8162fd4f",
+                "uuid_relationclass": "38a0dbe1-75b2-4678-ac0d-d4fbb7f7ae05",
+                "uuid_has_reference_class_instance": "532cd312-ede2-4ad0-acbe-f0c61a132950"
+            }
+        },
+        {
+            "uuid": "e1e04bb8-f39b-439a-bf4c-0e76b9331ee4",
+            "coordinates_2d": {
+                "x": -1,
+                "y": 1,
+                "z": 0.4
+            },
+            "relative_coordinate_3d": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+            },
+            "custom_variables": {},
+            "uuid_class": "38a0dbe1-75b2-4678-ac0d-d4fbb7f7ae05",
+            "uuid_relationclass": "38a0dbe1-75b2-4678-ac0d-d4fbb7f7ae05",
+            "attribute_instance": [
+                {
+                    "uuid": "be47f0a8-d892-4141-956e-8af3d67fa4fe",
+                    "coordinates_2d": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    },
+                    "relative_coordinate_3d": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    },
+                    "rotation": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0,
+                        "w": 1
+                    },
+                    "custom_variables": {},
+                    "uuid_attribute": "d6632c72-89fa-4210-9d01-18e911505608",
+                    "assigned_uuid_scene_instance": null,
+                    "assigned_uuid_class_instance": "e1e04bb8-f39b-439a-bf4c-0e76b9331ee4",
+                    "value": "Name in subsequent",
+                    "table_attributes": [],
+                    "name": "Name"
+                }
+            ],
+            "port_instance": [],
+            "line_points": [
+                {
+                    "UUID": "f06b7244-0e74-4d80-9126-42cce7012924",
+                    "Point": {
+                        "x": -1,
+                        "y": 1,
+                        "z": 0
+                    }
+                },
+                {
+                    "UUID": "c4def236-cfc7-4e56-b862-a89b9f937cac",
+                    "Point": {
+                        "x": 1.4,
+                        "y": -0.5,
+                        "z": 0
+                    }
+                }
+            ],
+            "uuid_relationclass_bendpoint": "b9b189da-0dfc-4691-b6c9-198dc3861fc6",
+            "name": "subsequent_e1e04bb8-f39b-439a-bf4c-0e76b9331ee4",
+            "role_instance_from": {
+                "uuid": "41ad3332-55c6-4460-a3e0-1c268e601fc0",
+                "coordinates_2d": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "relative_coordinate_3d": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                },
+                "custom_variables": {},
+                "uuid_role": "1079d5a8-0b35-4d16-93c2-49b069cfc07b",
+                "uuid_relationclass": "38a0dbe1-75b2-4678-ac0d-d4fbb7f7ae05",
+                "uuid_has_reference_class_instance": "f06b7244-0e74-4d80-9126-42cce7012924"
+            },
+            "role_instance_to": {
+                "uuid": "08cedca0-f26d-42d7-a4f7-81955d6b2a2e",
+                "coordinates_2d": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "relative_coordinate_3d": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                },
+                "custom_variables": {},
+                "uuid_role": "f2c856d8-ca17-49fc-b790-769e8162fd4f",
+                "uuid_relationclass": "38a0dbe1-75b2-4678-ac0d-d4fbb7f7ae05",
+                "uuid_has_reference_class_instance": "c4def236-cfc7-4e56-b862-a89b9f937cac"
+            }
+        },
+        {
+            "uuid": "b8c09c9b-35bf-473c-a655-c237cbacbb84",
+            "coordinates_2d": {
+                "x": 0.8,
+                "y": -0.4,
+                "z": 0.1
+            },
+            "relative_coordinate_3d": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+            },
+            "custom_variables": {},
+            "uuid_class": "38a0dbe1-75b2-4678-ac0d-d4fbb7f7ae05",
+            "uuid_relationclass": "38a0dbe1-75b2-4678-ac0d-d4fbb7f7ae05",
+            "attribute_instance": [
+                {
+                    "uuid": "dfe63b5b-4d33-44d0-a413-527778f31875",
+                    "coordinates_2d": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    },
+                    "relative_coordinate_3d": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    },
+                    "rotation": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0,
+                        "w": 1
+                    },
+                    "custom_variables": {},
+                    "uuid_attribute": "d6632c72-89fa-4210-9d01-18e911505608",
+                    "assigned_uuid_scene_instance": null,
+                    "assigned_uuid_class_instance": "b8c09c9b-35bf-473c-a655-c237cbacbb84",
+                    "value": "Name in subsequent",
+                    "table_attributes": [],
+                    "name": "Name"
+                }
+            ],
+            "port_instance": [],
+            "line_points": [
+                {
+                    "UUID": "c4def236-cfc7-4e56-b862-a89b9f937cac",
+                    "Point": {
+                        "x": 1.4,
+                        "y": -0.5,
+                        "z": 0
+                    }
+                },
+                {
+                    "UUID": "9c0cfffe-bd9c-403a-9aa2-18dc9b5760c0",
+                    "Point": {
+                        "x": -1,
+                        "y": -2,
+                        "z": 0
+                    }
+                }
+            ],
+            "uuid_relationclass_bendpoint": "b9b189da-0dfc-4691-b6c9-198dc3861fc6",
+            "name": "subsequent_b8c09c9b-35bf-473c-a655-c237cbacbb84",
+            "role_instance_from": {
+                "uuid": "1a19ca85-d218-4689-8a17-0b485769ca84",
+                "coordinates_2d": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "relative_coordinate_3d": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                },
+                "custom_variables": {},
+                "uuid_role": "1079d5a8-0b35-4d16-93c2-49b069cfc07b",
+                "uuid_relationclass": "38a0dbe1-75b2-4678-ac0d-d4fbb7f7ae05",
+                "uuid_has_reference_class_instance": "c4def236-cfc7-4e56-b862-a89b9f937cac"
+            },
+            "role_instance_to": {
+                "uuid": "39b8b67f-0e21-4375-b65c-8ac1a19d1608",
+                "coordinates_2d": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "relative_coordinate_3d": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                },
+                "custom_variables": {},
+                "uuid_role": "f2c856d8-ca17-49fc-b790-769e8162fd4f",
+                "uuid_relationclass": "38a0dbe1-75b2-4678-ac0d-d4fbb7f7ae05",
+                "uuid_has_reference_class_instance": "9c0cfffe-bd9c-403a-9aa2-18dc9b5760c0"
+            }
+        }
+    ],
+    "name": "BPMN-Start-parallel-2Tasks-End",
+    "description": ""
+}
