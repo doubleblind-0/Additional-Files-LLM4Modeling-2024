@@ -1,0 +1,618 @@
+{
+  "uuid": "a3b35b86-2636-4987-8cc4-814f468f6c4b",
+  "name": "ObjectSpace",
+  "rotation": {
+    "x": 0,
+    "y": 0,
+    "z": 0,
+    "w": 1
+  },
+  "classes": [
+    {
+      "uuid": "a8e78bba-087e-407f-974a-18c36d830bc8",
+      "name": "Detectable",
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "is_reusable": null,
+      "is_abstract": null,
+      "attributes": [
+        {
+          "uuid": "6a831d7e-40ca-45b3-9f3e-4f5b35fd8879",
+          "name": "is origin",
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "multi_valued": false,
+          "default_value": "\"false\"",
+          "description": null,
+          "coordinates_2d": null,
+          "uuid_metaobject": "6a831d7e-40ca-45b3-9f3e-4f5b35fd8879",
+          "facets": "true|false",
+          "attribute_type_uuid": "8d77b476-ef09-40c0-a997-92233c4b8636",
+          "attribute_type": {
+            "uuid": "8d77b476-ef09-40c0-a997-92233c4b8636",
+            "name": "Enumeration",
+            "pre_defined": true,
+            "regex_value": "^([\\x09\\x0A\\x0D\\x20-\\x7E]|[\\xC2-\\xDF][\\x80-\\xBF]|\\xE0[\\xA0-\\xBF][\\x80-\\xBF]|[\\xE1-\\xEC\\xEE\\xEF][\\x80-\\xBF]{2}|\\xED[\\x80-\\x9F][\\x80-\\xBF]|\\xF0[\\x90-\\xBF][\\x80-\\xBF]{2}|[\\xF1-\\xF3][\\x80-\\xBF]{3}|\\xF4[\\x80-\\x8F][\\x80-\\xBF]{2})*$",
+            "roles": [],
+            "has_table_attribute": [],
+            "description": null,
+            "uuid_metaobject": "8d77b476-ef09-40c0-a997-92233c4b8636"
+          },
+          "sequence": 2,
+          "ui_component": "dropdown"
+        },
+        {
+          "uuid": "d334dd62-5651-4d0f-a7a0-13718f20da36",
+          "name": "Image",
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "multi_valued": false,
+          "default_value": "\"Image\"",
+          "description": "This is the attribute to store an image to detect",
+          "coordinates_2d": null,
+          "uuid_metaobject": "d334dd62-5651-4d0f-a7a0-13718f20da36",
+          "attribute_type_uuid": "85897325-c2b3-4ca7-8902-8120300a08dc",
+          "attribute_type": {
+            "uuid": "85897325-c2b3-4ca7-8902-8120300a08dc",
+            "name": "String",
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "pre_defined": true,
+            "regex_value": "^([\\x09\\x0A\\x0D\\x20-\\x7E]|[\\xC2-\\xDF][\\x80-\\xBF]|\\xE0[\\xA0-\\xBF][\\x80-\\xBF]|[\\xE1-\\xEC\\xEE\\xEF][\\x80-\\xBF]{2}|\\xED[\\x80-\\x9F][\\x80-\\xBF]|\\xF0[\\x90-\\xBF][\\x80-\\xBF]{2}|[\\xF1-\\xF3][\\x80-\\xBF]{3}|\\xF4[\\x80-\\x8F][\\x80-\\xBF]{2})*$",
+            "roles": [],
+            "has_table_attribute": [],
+            "description": null,
+            "coordinates_2d": null,
+            "uuid_metaobject": "85897325-c2b3-4ca7-8902-8120300a08dc"
+          },
+          "sequence": 3,
+          "ui_component": "text"
+        },
+        {
+          "uuid": "c1d9b467-08d8-4350-aa62-a47d6939b6ec",
+          "name": "Width in meters",
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "multi_valued": false,
+          "default_value": "0.0",
+          "description": "This is the attribute to store the real world size of the image to detect",
+          "coordinates_2d": null,
+          "uuid_metaobject": "c1d9b467-08d8-4350-aa62-a47d6939b6ec",
+          "attribute_type_uuid": "00ce583a-9762-4700-af36-b4fdca7a9d3f",
+          "attribute_type": {
+            "uuid": "00ce583a-9762-4700-af36-b4fdca7a9d3f",
+            "name": "Float",
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "pre_defined": false,
+            "regex_value": "^[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)?$",
+            "roles": [],
+            "has_table_attribute": [],
+            "description": "This is the float attribute type",
+            "coordinates_2d": null,
+            "uuid_metaobject": "00ce583a-9762-4700-af36-b4fdca7a9d3f"
+          },
+          "sequence": 4,
+          "ui_component": "number"
+        },
+        {
+          "uuid": "b058b3b4-b523-4ffe-b08e-4f8dda2831c8",
+          "name": "Object 3D",
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "multi_valued": false,
+          "default_value": "\"3D Object String\"",
+          "description": "This is the attribute to store a 3D object string",
+          "coordinates_2d": null,
+          "uuid_metaobject": "b058b3b4-b523-4ffe-b08e-4f8dda2831c8",
+          "attribute_type_uuid": "85897325-c2b3-4ca7-8902-8120300a08dc",
+          "attribute_type": {
+            "uuid": "85897325-c2b3-4ca7-8902-8120300a08dc",
+            "name": "String",
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "pre_defined": true,
+            "regex_value": "^([\\x09\\x0A\\x0D\\x20-\\x7E]|[\\xC2-\\xDF][\\x80-\\xBF]|\\xE0[\\xA0-\\xBF][\\x80-\\xBF]|[\\xE1-\\xEC\\xEE\\xEF][\\x80-\\xBF]{2}|\\xED[\\x80-\\x9F][\\x80-\\xBF]|\\xF0[\\x90-\\xBF][\\x80-\\xBF]{2}|[\\xF1-\\xF3][\\x80-\\xBF]{3}|\\xF4[\\x80-\\x8F][\\x80-\\xBF]{2})*$",
+            "roles": [],
+            "has_table_attribute": [],
+            "description": null,
+            "coordinates_2d": null,
+            "uuid_metaobject": "85897325-c2b3-4ca7-8902-8120300a08dc"
+          },
+          "sequence": 5,
+          "ui_component": "text"
+        },
+        {
+          "uuid": "d6632c72-89fa-4210-9d01-18e911505608",
+          "name": "Name",
+          "multi_valued": false,
+          "default_value": "\"Name\"",
+          "description": "Name Attribute",
+          "uuid_metaobject": "d6632c72-89fa-4210-9d01-18e911505608",
+          "attribute_type_uuid": "85897325-c2b3-4ca7-8902-8120300a08dc",
+          "attribute_type": {
+            "uuid": "85897325-c2b3-4ca7-8902-8120300a08dc",
+            "name": "String",
+            "pre_defined": true,
+            "regex_value": "^([\\x09\\x0A\\x0D\\x20-\\x7E]|[\\xC2-\\xDF][\\x80-\\xBF]|\\xE0[\\xA0-\\xBF][\\x80-\\xBF]|[\\xE1-\\xEC\\xEE\\xEF][\\x80-\\xBF]{2}|\\xED[\\x80-\\x9F][\\x80-\\xBF]|\\xF0[\\x90-\\xBF][\\x80-\\xBF]{2}|[\\xF1-\\xF3][\\x80-\\xBF]{3}|\\xF4[\\x80-\\x8F][\\x80-\\xBF]{2})*$",
+            "roles": [],
+            "has_table_attribute": [],
+            "description": "Name AttributeType",
+            "uuid_metaobject": "85897325-c2b3-4ca7-8902-8120300a08dc"
+          },
+          "sequence": 1,
+          "ui_component": "text"
+        }
+      ],
+      "class_references": [],
+      "ports": [],
+      "description": "This is the Detectable class for ObjectSpace",
+      "coordinates_2d": null,
+      "uuid_metaobject": "a8e78bba-087e-407f-974a-18c36d830bc8"
+    },
+    {
+      "uuid": "99ccdf26-98ec-4424-9443-490bcb825307",
+      "name": "Augmentation",
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "is_reusable": null,
+      "is_abstract": null,
+      "attributes": [
+        {
+          "uuid": "d334dd62-5651-4d0f-a7a0-13718f20da36",
+          "name": "Image",
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "multi_valued": false,
+          "default_value": "\"Image\"",
+          "description": "This is the attribute to store an image to detect",
+          "coordinates_2d": null,
+          "uuid_metaobject": "d334dd62-5651-4d0f-a7a0-13718f20da36",
+          "attribute_type_uuid": "85897325-c2b3-4ca7-8902-8120300a08dc",
+          "attribute_type": {
+            "uuid": "85897325-c2b3-4ca7-8902-8120300a08dc",
+            "name": "String",
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "pre_defined": true,
+            "regex_value": "^([\\x09\\x0A\\x0D\\x20-\\x7E]|[\\xC2-\\xDF][\\x80-\\xBF]|\\xE0[\\xA0-\\xBF][\\x80-\\xBF]|[\\xE1-\\xEC\\xEE\\xEF][\\x80-\\xBF]{2}|\\xED[\\x80-\\x9F][\\x80-\\xBF]|\\xF0[\\x90-\\xBF][\\x80-\\xBF]{2}|[\\xF1-\\xF3][\\x80-\\xBF]{3}|\\xF4[\\x80-\\x8F][\\x80-\\xBF]{2})*$",
+            "roles": [],
+            "has_table_attribute": [],
+            "description": null,
+            "coordinates_2d": null,
+            "uuid_metaobject": "85897325-c2b3-4ca7-8902-8120300a08dc"
+          },
+          "sequence": 4,
+          "ui_component": "text"
+        },
+        {
+          "uuid": "c1d9b467-08d8-4350-aa62-a47d6939b6ec",
+          "name": "Width in meters",
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "multi_valued": false,
+          "default_value": "0.0",
+          "description": "This is the attribute to store the real world size of the image to detect",
+          "coordinates_2d": null,
+          "uuid_metaobject": "c1d9b467-08d8-4350-aa62-a47d6939b6ec",
+          "attribute_type_uuid": "00ce583a-9762-4700-af36-b4fdca7a9d3f",
+          "attribute_type": {
+            "uuid": "00ce583a-9762-4700-af36-b4fdca7a9d3f",
+            "name": "Float",
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "pre_defined": false,
+            "regex_value": "^[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)?$",
+            "roles": [],
+            "has_table_attribute": [],
+            "description": "This is the float attribute type",
+            "coordinates_2d": null,
+            "uuid_metaobject": "00ce583a-9762-4700-af36-b4fdca7a9d3f"
+          },
+          "sequence": 5,
+          "ui_component": "number"
+        },
+        {
+          "uuid": "d13dc03d-fa64-4cbe-98cf-c083dd5ce49b",
+          "name": "Type of augmentation",
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "multi_valued": false,
+          "default_value": "\"3D Object\"",
+          "description": "This is the attribute to store the type of the augmentation",
+          "coordinates_2d": null,
+          "uuid_metaobject": "d13dc03d-fa64-4cbe-98cf-c083dd5ce49b",
+          "facets": "3D Object|Animation|Image|Video|Audio|Label|Link",
+          "attribute_type_uuid": "8d77b476-ef09-40c0-a997-92233c4b8636",
+          "attribute_type": {
+            "uuid": "8d77b476-ef09-40c0-a997-92233c4b8636",
+            "name": "Enumeration",
+            "pre_defined": true,
+            "regex_value": "^([\\x09\\x0A\\x0D\\x20-\\x7E]|[\\xC2-\\xDF][\\x80-\\xBF]|\\xE0[\\xA0-\\xBF][\\x80-\\xBF]|[\\xE1-\\xEC\\xEE\\xEF][\\x80-\\xBF]{2}|\\xED[\\x80-\\x9F][\\x80-\\xBF]|\\xF0[\\x90-\\xBF][\\x80-\\xBF]{2}|[\\xF1-\\xF3][\\x80-\\xBF]{3}|\\xF4[\\x80-\\x8F][\\x80-\\xBF]{2})*$",
+            "roles": [],
+            "has_table_attribute": [],
+            "description": null,
+            "uuid_metaobject": "8d77b476-ef09-40c0-a997-92233c4b8636"
+          },
+          "sequence": 2,
+          "ui_component": "dropdown"
+        },
+        {
+          "uuid": "b058b3b4-b523-4ffe-b08e-4f8dda2831c8",
+          "name": "Object 3D",
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "multi_valued": false,
+          "default_value": "\"3D Object String\"",
+          "description": "This is the attribute to store a 3D object string",
+          "coordinates_2d": null,
+          "uuid_metaobject": "b058b3b4-b523-4ffe-b08e-4f8dda2831c8",
+          "attribute_type_uuid": "85897325-c2b3-4ca7-8902-8120300a08dc",
+          "attribute_type": {
+            "uuid": "85897325-c2b3-4ca7-8902-8120300a08dc",
+            "name": "String",
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "pre_defined": true,
+            "regex_value": "^([\\x09\\x0A\\x0D\\x20-\\x7E]|[\\xC2-\\xDF][\\x80-\\xBF]|\\xE0[\\xA0-\\xBF][\\x80-\\xBF]|[\\xE1-\\xEC\\xEE\\xEF][\\x80-\\xBF]{2}|\\xED[\\x80-\\x9F][\\x80-\\xBF]|\\xF0[\\x90-\\xBF][\\x80-\\xBF]{2}|[\\xF1-\\xF3][\\x80-\\xBF]{3}|\\xF4[\\x80-\\x8F][\\x80-\\xBF]{2})*$",
+            "roles": [],
+            "has_table_attribute": [],
+            "description": null,
+            "coordinates_2d": null,
+            "uuid_metaobject": "85897325-c2b3-4ca7-8902-8120300a08dc"
+          },
+          "sequence": 3,
+          "ui_component": "text"
+        },
+        {
+          "uuid": "d6632c72-89fa-4210-9d01-18e911505608",
+          "name": "Name",
+          "multi_valued": false,
+          "default_value": "\"Name\"",
+          "description": "Name Attribute",
+          "uuid_metaobject": "d6632c72-89fa-4210-9d01-18e911505608",
+          "attribute_type_uuid": "85897325-c2b3-4ca7-8902-8120300a08dc",
+          "attribute_type": {
+            "uuid": "85897325-c2b3-4ca7-8902-8120300a08dc",
+            "name": "String",
+            "pre_defined": true,
+            "regex_value": "^([\\x09\\x0A\\x0D\\x20-\\x7E]|[\\xC2-\\xDF][\\x80-\\xBF]|\\xE0[\\xA0-\\xBF][\\x80-\\xBF]|[\\xE1-\\xEC\\xEE\\xEF][\\x80-\\xBF]{2}|\\xED[\\x80-\\x9F][\\x80-\\xBF]|\\xF0[\\x90-\\xBF][\\x80-\\xBF]{2}|[\\xF1-\\xF3][\\x80-\\xBF]{3}|\\xF4[\\x80-\\x8F][\\x80-\\xBF]{2})*$",
+            "roles": [],
+            "has_table_attribute": [],
+            "description": "Name AttributeType",
+            "uuid_metaobject": "85897325-c2b3-4ca7-8902-8120300a08dc"
+          },
+          "sequence": 1,
+          "ui_component": "text"
+        }
+      ],
+      "class_references": [],
+      "ports": [],
+      "description": "This is the Augmentation class for ObjectSpace",
+      "coordinates_2d": null,
+      "uuid_metaobject": "99ccdf26-98ec-4424-9443-490bcb825307"
+    },
+    {
+      "uuid": "466b5a6e-d7ff-46a6-a6eb-53394d9f612e",
+      "name": "generic_bendpoint",
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "is_reusable": null,
+      "is_abstract": null,
+      "attributes": [
+        {
+          "uuid": "d6632c72-89fa-4210-9d01-18e911505608",
+          "name": "Name",
+          "multi_valued": false,
+          "default_value": "\"Name\"",
+          "description": "Name Attribute",
+          "uuid_metaobject": "d6632c72-89fa-4210-9d01-18e911505608",
+          "attribute_type_uuid": "85897325-c2b3-4ca7-8902-8120300a08dc",
+          "attribute_type": {
+            "uuid": "85897325-c2b3-4ca7-8902-8120300a08dc",
+            "name": "String",
+            "pre_defined": true,
+            "regex_value": "^([\\x09\\x0A\\x0D\\x20-\\x7E]|[\\xC2-\\xDF][\\x80-\\xBF]|\\xE0[\\xA0-\\xBF][\\x80-\\xBF]|[\\xE1-\\xEC\\xEE\\xEF][\\x80-\\xBF]{2}|\\xED[\\x80-\\x9F][\\x80-\\xBF]|\\xF0[\\x90-\\xBF][\\x80-\\xBF]{2}|[\\xF1-\\xF3][\\x80-\\xBF]{3}|\\xF4[\\x80-\\x8F][\\x80-\\xBF]{2})*$",
+            "roles": [],
+            "has_table_attribute": [],
+            "description": "Name AttributeType",
+            "uuid_metaobject": "85897325-c2b3-4ca7-8902-8120300a08dc"
+          },
+          "sequence": 1,
+          "ui_component": "text"
+        }
+      ],
+      "class_references": [],
+      "ports": [],
+      "description": "This is the generic bendpoint",
+      "coordinates_2d": null,
+      "uuid_metaobject": "466b5a6e-d7ff-46a6-a6eb-53394d9f612e"
+    }
+  ],
+  "relationclasses": [
+    {
+      "uuid": "38c5e7fc-9d9e-4d66-83e0-8964a4744537",
+      "name": "child",
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "is_reusable": false,
+      "is_abstract": false,
+      "attributes": [
+        {
+          "uuid": "d6632c72-89fa-4210-9d01-18e911505608",
+          "name": "Name",
+          "multi_valued": false,
+          "default_value": "\"Name\"",
+          "description": "Name Attribute",
+          "uuid_metaobject": "d6632c72-89fa-4210-9d01-18e911505608",
+          "attribute_type_uuid": "85897325-c2b3-4ca7-8902-8120300a08dc",
+          "attribute_type": {
+            "uuid": "85897325-c2b3-4ca7-8902-8120300a08dc",
+            "name": "String",
+            "pre_defined": true,
+            "regex_value": "^([\\x09\\x0A\\x0D\\x20-\\x7E]|[\\xC2-\\xDF][\\x80-\\xBF]|\\xE0[\\xA0-\\xBF][\\x80-\\xBF]|[\\xE1-\\xEC\\xEE\\xEF][\\x80-\\xBF]{2}|\\xED[\\x80-\\x9F][\\x80-\\xBF]|\\xF0[\\x90-\\xBF][\\x80-\\xBF]{2}|[\\xF1-\\xF3][\\x80-\\xBF]{3}|\\xF4[\\x80-\\x8F][\\x80-\\xBF]{2})*$",
+            "roles": [],
+            "has_table_attribute": [],
+            "description": "Name AttributeType",
+            "uuid_metaobject": "85897325-c2b3-4ca7-8902-8120300a08dc"
+          },
+          "sequence": 1,
+          "ui_component": "text"
+        }
+      ],
+      "class_references": [],
+      "ports": [],
+      "role_from": "8638a675-d4eb-4abf-96c1-7ec9204d4b8c",
+      "role_to": "9bbfe9c7-50b1-4ae4-ab4d-9df26618dd88",
+      "roles": [
+        {
+          "uuid": "8638a675-d4eb-4abf-96c1-7ec9204d4b8c",
+          "name": "child_from",
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "class_references": [
+            {
+              "uuid": "99ccdf26-98ec-4424-9443-490bcb825307",
+              "min": null,
+              "max": null
+            }
+          ],
+          "relationclass_references": [],
+          "scenetype_references": [],
+          "port_references": [],
+          "uuid_metaobject": "8638a675-d4eb-4abf-96c1-7ec9204d4b8c",
+          "description": null,
+          "coordinates_2d": null,
+        },
+        {
+          "uuid": "9bbfe9c7-50b1-4ae4-ab4d-9df26618dd88",
+          "name": "child_to",
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "class_references": [
+            {
+              "uuid": "99ccdf26-98ec-4424-9443-490bcb825307",
+              "min": null,
+              "max": null
+            }
+          ],
+          "relationclass_references": [],
+          "scenetype_references": [],
+          "port_references": [],
+          "uuid_metaobject": "9bbfe9c7-50b1-4ae4-ab4d-9df26618dd88",
+          "description": null,
+          "coordinates_2d": null,
+        }
+      ],
+      "relationclass_references": [],
+      "description": null,
+      "coordinates_2d": null,
+      "uuid_metaobject": "38c5e7fc-9d9e-4d66-83e0-8964a4744537",
+      "uuid_class": "38c5e7fc-9d9e-4d66-83e0-8964a4744537",
+      "uuid_class_bendpoint": "466b5a6e-d7ff-46a6-a6eb-53394d9f612e",
+      "bendpoints": "466b5a6e-d7ff-46a6-a6eb-53394d9f612e"
+    },
+    {
+      "uuid": "168481aa-9dd4-4558-bebd-0f033c8d66e4",
+      "name": "anchored",
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "is_reusable": false,
+      "is_abstract": false,
+      "attributes": [
+        {
+          "uuid": "d6632c72-89fa-4210-9d01-18e911505608",
+          "name": "Name",
+          "multi_valued": false,
+          "default_value": "\"Name\"",
+          "description": "Name Attribute",
+          "uuid_metaobject": "d6632c72-89fa-4210-9d01-18e911505608",
+          "attribute_type_uuid": "85897325-c2b3-4ca7-8902-8120300a08dc",
+          "attribute_type": {
+            "uuid": "85897325-c2b3-4ca7-8902-8120300a08dc",
+            "name": "String",
+            "pre_defined": true,
+            "regex_value": "^([\\x09\\x0A\\x0D\\x20-\\x7E]|[\\xC2-\\xDF][\\x80-\\xBF]|\\xE0[\\xA0-\\xBF][\\x80-\\xBF]|[\\xE1-\\xEC\\xEE\\xEF][\\x80-\\xBF]{2}|\\xED[\\x80-\\x9F][\\x80-\\xBF]|\\xF0[\\x90-\\xBF][\\x80-\\xBF]{2}|[\\xF1-\\xF3][\\x80-\\xBF]{3}|\\xF4[\\x80-\\x8F][\\x80-\\xBF]{2})*$",
+            "roles": [],
+            "has_table_attribute": [],
+            "description": "Name AttributeType",
+            "uuid_metaobject": "85897325-c2b3-4ca7-8902-8120300a08dc"
+          },
+          "sequence": 1,
+          "ui_component": "text"
+        }
+      ],
+      "class_references": [],
+      "ports": [],
+      "role_from": "266ed815-ddd4-4e48-a5e1-fa58ed3d06c2",
+      "role_to": "70ac4647-0e95-488f-9aa4-3a5d010163aa",
+      "roles": [
+        {
+          "uuid": "266ed815-ddd4-4e48-a5e1-fa58ed3d06c2",
+          "name": "anchored_from",
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "class_references": [
+            {
+              "uuid": "a8e78bba-087e-407f-974a-18c36d830bc8",
+              "min": null,
+              "max": null
+            }
+          ],
+          "relationclass_references": [],
+          "scenetype_references": [],
+          "port_references": [],
+          "uuid_metaobject": "266ed815-ddd4-4e48-a5e1-fa58ed3d06c2",
+          "description": null,
+          "coordinates_2d": null,
+        },
+        {
+          "uuid": "70ac4647-0e95-488f-9aa4-3a5d010163aa",
+          "name": "anchored_to",
+          "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "class_references": [
+            {
+              "uuid": "99ccdf26-98ec-4424-9443-490bcb825307",
+              "min": null,
+              "max": null
+            }
+          ],
+          "relationclass_references": [],
+          "scenetype_references": [],
+          "port_references": [],
+          "uuid_metaobject": "70ac4647-0e95-488f-9aa4-3a5d010163aa",
+          "description": null,
+          "coordinates_2d": null,
+        }
+      ],
+      "relationclass_references": [],
+      "description": null,
+      "coordinates_2d": null,
+      "uuid_metaobject": "168481aa-9dd4-4558-bebd-0f033c8d66e4",
+      "uuid_class": "168481aa-9dd4-4558-bebd-0f033c8d66e4",
+      "uuid_class_bendpoint": "466b5a6e-d7ff-46a6-a6eb-53394d9f612e",
+      "bendpoints": "466b5a6e-d7ff-46a6-a6eb-53394d9f612e"
+    }
+  ],
+  "attributes": [
+    {
+      "uuid": "d6632c72-89fa-4210-9d01-18e911505608",
+      "name": "Name",
+      "multi_valued": false,
+      "default_value": "\"Name\"",
+      "description": "Name Attribute",
+      "uuid_metaobject": "d6632c72-89fa-4210-9d01-18e911505608",
+      "attribute_type_uuid": "85897325-c2b3-4ca7-8902-8120300a08dc",
+      "attribute_type": {
+        "uuid": "85897325-c2b3-4ca7-8902-8120300a08dc",
+        "name": "String",
+        "pre_defined": true,
+        "regex_value": "^([\\x09\\x0A\\x0D\\x20-\\x7E]|[\\xC2-\\xDF][\\x80-\\xBF]|\\xE0[\\xA0-\\xBF][\\x80-\\xBF]|[\\xE1-\\xEC\\xEE\\xEF][\\x80-\\xBF]{2}|\\xED[\\x80-\\x9F][\\x80-\\xBF]|\\xF0[\\x90-\\xBF][\\x80-\\xBF]{2}|[\\xF1-\\xF3][\\x80-\\xBF]{3}|\\xF4[\\x80-\\x8F][\\x80-\\xBF]{2})*$",
+        "roles": [],
+        "has_table_attribute": [],
+        "description": "Name AttributeType",
+        "uuid_metaobject": "85897325-c2b3-4ca7-8902-8120300a08dc"
+      },
+      "sequence": 1,
+      "ui_component": "text"
+    }
+  ],
+  "ports": [],
+  "roleSceneRef": [],
+  "description": "This is the SceneType for ObjectSpace",
+  "coordinates_2d": null,
+  "uuid_metaobject": "a3b35b86-2636-4987-8cc4-814f468f6c4b"
+}

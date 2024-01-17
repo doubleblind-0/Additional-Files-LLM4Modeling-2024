@@ -1,0 +1,481 @@
+{
+  "uuid": "ac2530cc-84d0-4959-94ad-742b4cb76960",
+  "name": "Activity and Workplace Model",
+  "classes": [
+    {
+      "uuid": "9a56be9b-2fb4-4500-b7bc-551df397fd54",
+      "name": "Detectable",
+      "is_reusable": true,
+      "is_abstract": false,
+      "attributes": [
+        {
+          "uuid": "d6632c72-89fa-4210-9d01-18e911505608",
+          "name": "Name",
+          "multi_valued": false,
+          "default_value": "\"Name\"",
+          "description": "Name Attribute",
+          "uuid_metaobject": "d6632c72-89fa-4210-9d01-18e911505608",
+          "attribute_type_uuid": "85897325-c2b3-4ca7-8902-8120300a08dc",
+          "attribute_type": {
+            "uuid": "85897325-c2b3-4ca7-8902-8120300a08dc",
+            "name": "String",
+            "pre_defined": true,
+            "regex_value": "^([\\x09\\x0A\\x0D\\x20-\\x7E]|[\\xC2-\\xDF][\\x80-\\xBF]|\\xE0[\\xA0-\\xBF][\\x80-\\xBF]|[\\xE1-\\xEC\\xEE\\xEF][\\x80-\\xBF]{2}|\\xED[\\x80-\\x9F][\\x80-\\xBF]|\\xF0[\\x90-\\xBF][\\x80-\\xBF]{2}|[\\xF1-\\xF3][\\x80-\\xBF]{3}|\\xF4[\\x80-\\x8F][\\x80-\\xBF]{2})*$",
+            "roles": [],
+            "has_table_attribute": [],
+            "description": "Name AttributeType",
+            "uuid_metaobject": "85897325-c2b3-4ca7-8902-8120300a08dc"
+          },
+          "sequence": 1,
+          "ui_component": "text"
+        },
+        {
+          "uuid": "f0eb3782-9547-4236-a1fa-34df30efe800",
+          "name": "Detectable Type",
+          "multi_valued": false,
+          "description": null,
+          "coordinates_2d": null,
+          "uuid_metaobject": "f0eb3782-9547-4236-a1fa-34df30efe800",
+          "default_value": "\"String \" + Math.floor(Math.random() * 100).toString()",
+          "attribute_type_uuid": "85897325-c2b3-4ca7-8902-8120300a08dc",
+          "attribute_type": {
+            "uuid": "85897325-c2b3-4ca7-8902-8120300a08dc",
+            "name": "String",
+            "pre_defined": true,
+            "regex_value": "^([\\x09\\x0A\\x0D\\x20-\\x7E]|[\\xC2-\\xDF][\\x80-\\xBF]|\\xE0[\\xA0-\\xBF][\\x80-\\xBF]|[\\xE1-\\xEC\\xEE\\xEF][\\x80-\\xBF]{2}|\\xED[\\x80-\\x9F][\\x80-\\xBF]|\\xF0[\\x90-\\xBF][\\x80-\\xBF]{2}|[\\xF1-\\xF3][\\x80-\\xBF]{3}|\\xF4[\\x80-\\x8F][\\x80-\\xBF]{2})*$",
+            "roles": [],
+            "has_table_attribute": [],
+            "description": null,
+            "coordinates_2d": null,
+            "uuid_metaobject": "85897325-c2b3-4ca7-8902-8120300a08dc"
+          }
+        },
+        {
+          "uuid": "5e682fcb-8012-41d3-a797-14a32e0d0dc5",
+          "name": "Marker-String",
+          "multi_valued": false,
+          "description": null,
+          "coordinates_2d": null,
+          "uuid_metaobject": "5e682fcb-8012-41d3-a797-14a32e0d0dc5",
+          "default_value": "\"String \" + Math.floor(Math.random() * 100).toString()",
+          "attribute_type_uuid": "85897325-c2b3-4ca7-8902-8120300a08dc",
+          "attribute_type": {
+            "uuid": "85897325-c2b3-4ca7-8902-8120300a08dc",
+            "name": "String",
+            "pre_defined": true,
+            "regex_value": "^([\\x09\\x0A\\x0D\\x20-\\x7E]|[\\xC2-\\xDF][\\x80-\\xBF]|\\xE0[\\xA0-\\xBF][\\x80-\\xBF]|[\\xE1-\\xEC\\xEE\\xEF][\\x80-\\xBF]{2}|\\xED[\\x80-\\x9F][\\x80-\\xBF]|\\xF0[\\x90-\\xBF][\\x80-\\xBF]{2}|[\\xF1-\\xF3][\\x80-\\xBF]{3}|\\xF4[\\x80-\\x8F][\\x80-\\xBF]{2})*$",
+            "roles": [],
+            "has_table_attribute": [],
+            "description": null,
+            "coordinates_2d": null,
+            "uuid_metaobject": "85897325-c2b3-4ca7-8902-8120300a08dc"
+          }
+        }
+      ],
+      "class_references": [],
+      "ports": [],
+      "description": "This ist the Detectable class",
+      "coordinates_2d": null,
+      "uuid_metaobject": "9a56be9b-2fb4-4500-b7bc-551df397fd54"
+    },
+    {
+      "uuid": "cc6eed65-f752-4751-bad0-ef85119d2247",
+      "name": "Action",
+      "is_reusable": true,
+      "is_abstract": false,
+      "attributes": [
+        {
+          "uuid": "d6632c72-89fa-4210-9d01-18e911505608",
+          "name": "Name",
+          "multi_valued": false,
+          "default_value": "\"Name\"",
+          "description": "Name Attribute",
+          "uuid_metaobject": "d6632c72-89fa-4210-9d01-18e911505608",
+          "attribute_type_uuid": "85897325-c2b3-4ca7-8902-8120300a08dc",
+          "attribute_type": {
+            "uuid": "85897325-c2b3-4ca7-8902-8120300a08dc",
+            "name": "String",
+            "pre_defined": true,
+            "regex_value": "^([\\x09\\x0A\\x0D\\x20-\\x7E]|[\\xC2-\\xDF][\\x80-\\xBF]|\\xE0[\\xA0-\\xBF][\\x80-\\xBF]|[\\xE1-\\xEC\\xEE\\xEF][\\x80-\\xBF]{2}|\\xED[\\x80-\\x9F][\\x80-\\xBF]|\\xF0[\\x90-\\xBF][\\x80-\\xBF]{2}|[\\xF1-\\xF3][\\x80-\\xBF]{3}|\\xF4[\\x80-\\x8F][\\x80-\\xBF]{2})*$",
+            "roles": [],
+            "has_table_attribute": [],
+            "description": "Name AttributeType",
+            "uuid_metaobject": "85897325-c2b3-4ca7-8902-8120300a08dc"
+          },
+          "sequence": 1,
+          "ui_component": "text"
+        }
+      ],
+      "class_references": [],
+      "ports": [],
+      "description": "This is the action class",
+      "coordinates_2d": null,
+      "uuid_metaobject": "cc6eed65-f752-4751-bad0-ef85119d2247"
+    },
+    {
+      "uuid": "95c90c5d-5daa-42c7-a72c-6a6776e408ac",
+      "name": "Activity and Workplace Model Bendpoint",
+      "is_reusable": true,
+      "is_abstract": false,
+      "attributes": [],
+      "class_references": [],
+      "ports": [],
+      "description": "This is a bendpoint",
+      "coordinates_2d": null,
+      "uuid_metaobject": "95c90c5d-5daa-42c7-a72c-6a6776e408ac"
+    },
+    {
+      "uuid": "b5f05914-ed7f-46d9-9645-975907b60c77",
+      "name": "Tangible",
+      "is_reusable": true,
+      "is_abstract": false,
+      "attributes": [
+        {
+          "uuid": "c3addbb3-e77c-4a8b-a6a9-a843c28ba5f9",
+          "name": "Tangible Type",
+          "multi_valued": false,
+          "description": "this describes the type of the tangible, e.g., video or image",
+          "coordinates_2d": null,
+          "uuid_metaobject": "c3addbb3-e77c-4a8b-a6a9-a843c28ba5f9",
+          "default_value": "\"String \" + Math.floor(Math.random() * 100).toString()",
+          "attribute_type_uuid": "85897325-c2b3-4ca7-8902-8120300a08dc",
+          "attribute_type": {
+            "uuid": "85897325-c2b3-4ca7-8902-8120300a08dc",
+            "name": "String",
+            "pre_defined": true,
+            "regex_value": "^([\\x09\\x0A\\x0D\\x20-\\x7E]|[\\xC2-\\xDF][\\x80-\\xBF]|\\xE0[\\xA0-\\xBF][\\x80-\\xBF]|[\\xE1-\\xEC\\xEE\\xEF][\\x80-\\xBF]{2}|\\xED[\\x80-\\x9F][\\x80-\\xBF]|\\xF0[\\x90-\\xBF][\\x80-\\xBF]{2}|[\\xF1-\\xF3][\\x80-\\xBF]{3}|\\xF4[\\x80-\\x8F][\\x80-\\xBF]{2})*$",
+            "roles": [],
+            "has_table_attribute": [],
+            "description": null,
+            "coordinates_2d": null,
+            "uuid_metaobject": "85897325-c2b3-4ca7-8902-8120300a08dc"
+          }
+        },
+        {
+          "uuid": "d6632c72-89fa-4210-9d01-18e911505608",
+          "name": "Name",
+          "multi_valued": false,
+          "default_value": "\"Name\"",
+          "description": "Name Attribute",
+          "uuid_metaobject": "d6632c72-89fa-4210-9d01-18e911505608",
+          "attribute_type_uuid": "85897325-c2b3-4ca7-8902-8120300a08dc",
+          "attribute_type": {
+            "uuid": "85897325-c2b3-4ca7-8902-8120300a08dc",
+            "name": "String",
+            "pre_defined": true,
+            "regex_value": "^([\\x09\\x0A\\x0D\\x20-\\x7E]|[\\xC2-\\xDF][\\x80-\\xBF]|\\xE0[\\xA0-\\xBF][\\x80-\\xBF]|[\\xE1-\\xEC\\xEE\\xEF][\\x80-\\xBF]{2}|\\xED[\\x80-\\x9F][\\x80-\\xBF]|\\xF0[\\x90-\\xBF][\\x80-\\xBF]{2}|[\\xF1-\\xF3][\\x80-\\xBF]{3}|\\xF4[\\x80-\\x8F][\\x80-\\xBF]{2})*$",
+            "roles": [],
+            "has_table_attribute": [],
+            "description": "Name AttributeType",
+            "uuid_metaobject": "85897325-c2b3-4ca7-8902-8120300a08dc"
+          },
+          "sequence": 1,
+          "ui_component": "text"
+        }
+      ],
+      "class_references": [],
+      "ports": [],
+      "description": "This is the Tangible class",
+      "coordinates_2d": null,
+      "uuid_metaobject": "b5f05914-ed7f-46d9-9645-975907b60c77"
+    }
+  ],
+  "relationclasses": [
+    {
+      "uuid": "3c9aff78-a47e-4414-89a3-998c833ed3f3",
+      "name": "On Enter Activate",
+      "is_reusable": null,
+      "is_abstract": null,
+      "attributes": [],
+      "class_references": [],
+      "ports": [],
+      "role_from": "5a1533e0-6ace-4858-9fee-abc3ef9c2f7a",
+      "role_to": "c74ebbcb-7b34-42eb-ad8f-3d379916954e",
+      "roles": [
+        {
+          "uuid": "5a1533e0-6ace-4858-9fee-abc3ef9c2f7a",
+          "name": "On Enter Activate From",
+          "class_references": [
+            {
+              "uuid": "cc6eed65-f752-4751-bad0-ef85119d2247",
+              "min": null,
+              "max": null
+            }
+          ],
+          "relationclass_references": [],
+          "scenetype_references": [],
+          "port_references": [],
+          "uuid_metaobject": "5a1533e0-6ace-4858-9fee-abc3ef9c2f7a",
+          "description": null,
+          "coordinates_2d": null,
+        },
+        {
+          "uuid": "c74ebbcb-7b34-42eb-ad8f-3d379916954e",
+          "name": "On Enter Activate To",
+          "class_references": [
+            {
+              "uuid": "cc6eed65-f752-4751-bad0-ef85119d2247",
+              "min": null,
+              "max": null
+            },
+            {
+              "uuid": "b5f05914-ed7f-46d9-9645-975907b60c77",
+              "min": null,
+              "max": null
+            }
+          ],
+          "relationclass_references": [],
+          "scenetype_references": [],
+          "port_references": [],
+          "uuid_metaobject": "c74ebbcb-7b34-42eb-ad8f-3d379916954e",
+          "description": null,
+          "coordinates_2d": null,
+        }
+      ],
+      "relationclass_references": [],
+      "description": null,
+      "coordinates_2d": null,
+      "uuid_metaobject": "3c9aff78-a47e-4414-89a3-998c833ed3f3",
+      "uuid_class": "3c9aff78-a47e-4414-89a3-998c833ed3f3",
+      "uuid_class_bendpoint": "95c90c5d-5daa-42c7-a72c-6a6776e408ac",
+      "bendpoints": "95c90c5d-5daa-42c7-a72c-6a6776e408ac"
+    },
+    {
+      "uuid": "d9d72e00-ebc4-4b4f-9c78-4af36eab3e28",
+      "name": "On Enter Deactivate",
+      "is_reusable": null,
+      "is_abstract": null,
+      "attributes": [],
+      "class_references": [],
+      "ports": [],
+      "role_from": "5bc38ee0-970b-4e1a-8273-bcf9a18ee623",
+      "role_to": "109f65ab-4ccf-4e21-b255-5818dd4b2f0f",
+      "roles": [
+        {
+          "uuid": "5bc38ee0-970b-4e1a-8273-bcf9a18ee623",
+          "name": "On Enter Deactivate From",
+          "class_references": [
+            {
+              "uuid": "cc6eed65-f752-4751-bad0-ef85119d2247",
+              "min": null,
+              "max": null
+            }
+          ],
+          "relationclass_references": [],
+          "scenetype_references": [],
+          "port_references": [],
+          "uuid_metaobject": "5bc38ee0-970b-4e1a-8273-bcf9a18ee623",
+          "description": null,
+          "coordinates_2d": null,
+        },
+        {
+          "uuid": "109f65ab-4ccf-4e21-b255-5818dd4b2f0f",
+          "name": "On Enter Deactivate To",
+          "class_references": [
+            {
+              "uuid": "cc6eed65-f752-4751-bad0-ef85119d2247",
+              "min": null,
+              "max": null
+            },
+            {
+              "uuid": "b5f05914-ed7f-46d9-9645-975907b60c77",
+              "min": null,
+              "max": null
+            }
+          ],
+          "relationclass_references": [],
+          "scenetype_references": [],
+          "port_references": [],
+          "uuid_metaobject": "109f65ab-4ccf-4e21-b255-5818dd4b2f0f",
+          "description": null,
+          "coordinates_2d": null,
+        }
+      ],
+      "relationclass_references": [],
+      "description": null,
+      "coordinates_2d": null,
+      "uuid_metaobject": "d9d72e00-ebc4-4b4f-9c78-4af36eab3e28",
+      "uuid_class": "d9d72e00-ebc4-4b4f-9c78-4af36eab3e28",
+      "uuid_class_bendpoint": "95c90c5d-5daa-42c7-a72c-6a6776e408ac",
+      "bendpoints": "95c90c5d-5daa-42c7-a72c-6a6776e408ac"
+    },
+    {
+      "uuid": "b4332765-5770-43b9-ac2b-cba42461d8c4",
+      "name": "On Exit Activate",
+      "is_reusable": null,
+      "is_abstract": null,
+      "attributes": [],
+      "class_references": [],
+      "ports": [],
+      "role_from": "2b9042d4-0724-4e93-ab2b-0eee186e4e9f",
+      "role_to": "c367fa1f-4b1c-4cd6-84b1-3bb2cbb1ba2e",
+      "roles": [
+        {
+          "uuid": "2b9042d4-0724-4e93-ab2b-0eee186e4e9f",
+          "name": "On Exit Activate From",
+          "class_references": [
+            {
+              "uuid": "cc6eed65-f752-4751-bad0-ef85119d2247",
+              "min": null,
+              "max": null
+            }
+          ],
+          "relationclass_references": [],
+          "scenetype_references": [],
+          "port_references": [],
+          "uuid_metaobject": "2b9042d4-0724-4e93-ab2b-0eee186e4e9f",
+          "description": null,
+          "coordinates_2d": null,
+        },
+        {
+          "uuid": "c367fa1f-4b1c-4cd6-84b1-3bb2cbb1ba2e",
+          "name": "On Exit Activate To",
+          "class_references": [
+            {
+              "uuid": "cc6eed65-f752-4751-bad0-ef85119d2247",
+              "min": null,
+              "max": null
+            },
+            {
+              "uuid": "b5f05914-ed7f-46d9-9645-975907b60c77",
+              "min": null,
+              "max": null
+            }
+          ],
+          "relationclass_references": [],
+          "scenetype_references": [],
+          "port_references": [],
+          "uuid_metaobject": "c367fa1f-4b1c-4cd6-84b1-3bb2cbb1ba2e",
+          "description": null,
+          "coordinates_2d": null,
+        }
+      ],
+      "relationclass_references": [],
+      "description": null,
+      "coordinates_2d": null,
+      "uuid_metaobject": "b4332765-5770-43b9-ac2b-cba42461d8c4",
+      "uuid_class": "b4332765-5770-43b9-ac2b-cba42461d8c4",
+      "uuid_class_bendpoint": "95c90c5d-5daa-42c7-a72c-6a6776e408ac",
+      "bendpoints": "95c90c5d-5daa-42c7-a72c-6a6776e408ac"
+    },
+    {
+      "uuid": "77e1b6e9-f08b-40e1-8c93-464063109143",
+      "name": "On Exit Deactivate",
+      "is_reusable": null,
+      "is_abstract": null,
+      "attributes": [],
+      "class_references": [],
+      "ports": [],
+      "role_from": "d4980c36-0dd8-4e74-b336-488a5144f212",
+      "role_to": "350d8514-8480-478f-833b-290e1acef075",
+      "roles": [
+        {
+          "uuid": "d4980c36-0dd8-4e74-b336-488a5144f212",
+          "name": "On Exit Deactivate From",
+          "class_references": [
+            {
+              "uuid": "cc6eed65-f752-4751-bad0-ef85119d2247",
+              "min": null,
+              "max": null
+            }
+          ],
+          "relationclass_references": [],
+          "scenetype_references": [],
+          "port_references": [],
+          "uuid_metaobject": "d4980c36-0dd8-4e74-b336-488a5144f212",
+          "description": null,
+          "coordinates_2d": null,
+        },
+        {
+          "uuid": "350d8514-8480-478f-833b-290e1acef075",
+          "name": "On Exit Deactivate To",
+          "class_references": [
+            {
+              "uuid": "cc6eed65-f752-4751-bad0-ef85119d2247",
+              "min": null,
+              "max": null
+            },
+            {
+              "uuid": "b5f05914-ed7f-46d9-9645-975907b60c77",
+              "min": null,
+              "max": null
+            }
+          ],
+          "relationclass_references": [],
+          "scenetype_references": [],
+          "port_references": [],
+          "uuid_metaobject": "350d8514-8480-478f-833b-290e1acef075",
+          "description": null,
+          "coordinates_2d": null,
+        }
+      ],
+      "relationclass_references": [],
+      "description": null,
+      "coordinates_2d": null,
+      "uuid_metaobject": "77e1b6e9-f08b-40e1-8c93-464063109143",
+      "uuid_class": "77e1b6e9-f08b-40e1-8c93-464063109143",
+      "uuid_class_bendpoint": "95c90c5d-5daa-42c7-a72c-6a6776e408ac",
+      "bendpoints": "95c90c5d-5daa-42c7-a72c-6a6776e408ac"
+    },
+    {
+      "uuid": "40a6c695-c6eb-4238-86fa-2895129932cb",
+      "name": "Attached",
+      "is_reusable": null,
+      "is_abstract": null,
+      "attributes": [],
+      "class_references": [],
+      "ports": [],
+      "role_from": "5e62fa50-51a2-4fac-9226-688a543dbdc0",
+      "role_to": "7f77b128-9e88-44a1-8901-1e22bec571cb",
+      "roles": [
+        {
+          "uuid": "5e62fa50-51a2-4fac-9226-688a543dbdc0",
+          "name": "Attached From",
+          "class_references": [
+            {
+              "uuid": "b5f05914-ed7f-46d9-9645-975907b60c77",
+              "min": null,
+              "max": null
+            }
+          ],
+          "relationclass_references": [],
+          "scenetype_references": [],
+          "port_references": [],
+          "uuid_metaobject": "5e62fa50-51a2-4fac-9226-688a543dbdc0",
+          "description": null,
+          "coordinates_2d": null,
+        },
+        {
+          "uuid": "7f77b128-9e88-44a1-8901-1e22bec571cb",
+          "name": "Attached To",
+          "class_references": [
+            {
+              "uuid": "9a56be9b-2fb4-4500-b7bc-551df397fd54",
+              "min": null,
+              "max": null
+            }
+          ],
+          "relationclass_references": [],
+          "scenetype_references": [],
+          "port_references": [],
+          "uuid_metaobject": "7f77b128-9e88-44a1-8901-1e22bec571cb",
+          "description": null,
+          "coordinates_2d": null,
+        }
+      ],
+      "relationclass_references": [],
+      "description": null,
+      "coordinates_2d": null,
+      "uuid_metaobject": "40a6c695-c6eb-4238-86fa-2895129932cb",
+      "uuid_class": "40a6c695-c6eb-4238-86fa-2895129932cb",
+      "uuid_class_bendpoint": "95c90c5d-5daa-42c7-a72c-6a6776e408ac",
+      "bendpoints": "95c90c5d-5daa-42c7-a72c-6a6776e408ac"
+    }
+  ],
+  "attributes": [],
+  "ports": [],
+  "roleSceneRef": [],
+  "description": "Activity and Workplace Model",
+  "coordinates_2d": null,
+  "uuid_metaobject": "ac2530cc-84d0-4959-94ad-742b4cb76960"
+}

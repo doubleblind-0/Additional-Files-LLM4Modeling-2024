@@ -1,0 +1,448 @@
+{
+  "uuid": "1fef5ed1-1417-4c41-88ba-280a62b5644a",
+  "name": "e3-Value Model",
+  "classes": [
+    {
+      "uuid": "fb3a70e8-433c-4344-9103-775b45e45971",
+      "name": "Market segment",
+      "is_reusable": null,
+      "is_abstract": null,
+      "attributes": [
+        {
+          "uuid": "d6632c72-89fa-4210-9d01-18e911505608",
+          "name": "Name",
+          "multi_valued": false,
+          "default_value": "\"Name\"",
+          "description": "Name Attribute",
+          "uuid_metaobject": "d6632c72-89fa-4210-9d01-18e911505608",
+          "attribute_type_uuid": "85897325-c2b3-4ca7-8902-8120300a08dc",
+          "attribute_type": {
+            "uuid": "85897325-c2b3-4ca7-8902-8120300a08dc",
+            "name": "String",
+            "pre_defined": true,
+            "regex_value": "^([\\x09\\x0A\\x0D\\x20-\\x7E]|[\\xC2-\\xDF][\\x80-\\xBF]|\\xE0[\\xA0-\\xBF][\\x80-\\xBF]|[\\xE1-\\xEC\\xEE\\xEF][\\x80-\\xBF]{2}|\\xED[\\x80-\\x9F][\\x80-\\xBF]|\\xF0[\\x90-\\xBF][\\x80-\\xBF]{2}|[\\xF1-\\xF3][\\x80-\\xBF]{3}|\\xF4[\\x80-\\x8F][\\x80-\\xBF]{2})*$",
+            "roles": [],
+            "has_table_attribute": [],
+            "description": "Name AttributeType",
+            "uuid_metaobject": "85897325-c2b3-4ca7-8902-8120300a08dc"
+          },
+          "sequence": 1,
+          "ui_component": "text"
+        }
+      ],
+      "class_references": [],
+      "ports": [],
+      "description": "this is the class Market segment",
+      "coordinates_2d": null,
+      "uuid_metaobject": "fb3a70e8-433c-4344-9103-775b45e45971"
+    },
+    {
+      "uuid": "3fb0f391-93c3-40d0-bebf-1f27e5ca9c4d",
+      "name": "Activity",
+      "is_reusable": null,
+      "is_abstract": null,
+      "attributes": [
+        {
+          "uuid": "d6632c72-89fa-4210-9d01-18e911505608",
+          "name": "Name",
+          "multi_valued": false,
+          "default_value": "\"Name\"",
+          "description": "Name Attribute",
+          "uuid_metaobject": "d6632c72-89fa-4210-9d01-18e911505608",
+          "attribute_type_uuid": "85897325-c2b3-4ca7-8902-8120300a08dc",
+          "attribute_type": {
+            "uuid": "85897325-c2b3-4ca7-8902-8120300a08dc",
+            "name": "String",
+            "pre_defined": true,
+            "regex_value": "^([\\x09\\x0A\\x0D\\x20-\\x7E]|[\\xC2-\\xDF][\\x80-\\xBF]|\\xE0[\\xA0-\\xBF][\\x80-\\xBF]|[\\xE1-\\xEC\\xEE\\xEF][\\x80-\\xBF]{2}|\\xED[\\x80-\\x9F][\\x80-\\xBF]|\\xF0[\\x90-\\xBF][\\x80-\\xBF]{2}|[\\xF1-\\xF3][\\x80-\\xBF]{3}|\\xF4[\\x80-\\x8F][\\x80-\\xBF]{2})*$",
+            "roles": [],
+            "has_table_attribute": [],
+            "description": "Name AttributeType",
+            "uuid_metaobject": "85897325-c2b3-4ca7-8902-8120300a08dc"
+          },
+          "sequence": 1,
+          "ui_component": "text"
+        }
+      ],
+      "class_references": [],
+      "ports": [
+        {
+          "uuid": "f9f1b276-ae3c-4d9a-91a4-504319ad409c",
+          "name": "Port_for_Value_Transfer_left",
+          "uuid_class": "3fb0f391-93c3-40d0-bebf-1f27e5ca9c4d",
+          "uuid_scene_type": null,
+          "rolePortRef": [],
+          "attributes": [],
+          "uuid_metaobject": "f9f1b276-ae3c-4d9a-91a4-504319ad409c",
+          "description": null,
+          "coordinates_2d": null,
+          "x": -3,
+          "y": 0.1,
+          "z": 0
+        },
+      },
+      {
+        "uuid": "a8b6698f-fd6f-4065-9ac7-4b26a3c08af6",
+        "name": "Port_for_Value_Transfer_right",
+        "uuid_class": "3fb0f391-93c3-40d0-bebf-1f27e5ca9c4d",
+        "uuid_scene_type": null,
+        "rolePortRef": [],
+        "attributes": [],
+        "uuid_metaobject": "a8b6698f-fd6f-4065-9ac7-4b26a3c08af6",
+        "description": null,
+        "coordinates_2d": null,
+        "x": -3,
+        "y": -0.1,
+        "z": 0
+      },
+    },
+    {
+      "uuid": "2cb72942-2e5c-4493-bc38-d9fc8af6ef70",
+      "name": "Port_for_Value_Transfer_value_interface",
+      "uuid_class": "3fb0f391-93c3-40d0-bebf-1f27e5ca9c4d",
+      "uuid_scene_type": null,
+      "rolePortRef": [],
+      "attributes": [],
+      "uuid_metaobject": "2cb72942-2e5c-4493-bc38-d9fc8af6ef70",
+      "description": null,
+      "coordinates_2d": null,
+      "x": -3,
+      "y": 0,
+      "z": 0
+    },
+  }
+],
+"description": "this is the class Activity",
+"coordinates_2d": null,
+"uuid_metaobject": "3fb0f391-93c3-40d0-bebf-1f27e5ca9c4d"
+},
+{
+"uuid": "a802fe49-492f-44bc-9554-fba5a704da33",
+"name": "Customer Need",
+"is_reusable": null,
+"is_abstract": null,
+"attributes": [
+  {
+    "uuid": "d6632c72-89fa-4210-9d01-18e911505608",
+    "name": "Name",
+    "multi_valued": false,
+    "default_value": "\"Name\"",
+    "description": "Name Attribute",
+    "uuid_metaobject": "d6632c72-89fa-4210-9d01-18e911505608",
+    "attribute_type_uuid": "85897325-c2b3-4ca7-8902-8120300a08dc",
+    "attribute_type": {
+      "uuid": "85897325-c2b3-4ca7-8902-8120300a08dc",
+      "name": "String",
+      "pre_defined": true,
+      "regex_value": "^([\\x09\\x0A\\x0D\\x20-\\x7E]|[\\xC2-\\xDF][\\x80-\\xBF]|\\xE0[\\xA0-\\xBF][\\x80-\\xBF]|[\\xE1-\\xEC\\xEE\\xEF][\\x80-\\xBF]{2}|\\xED[\\x80-\\x9F][\\x80-\\xBF]|\\xF0[\\x90-\\xBF][\\x80-\\xBF]{2}|[\\xF1-\\xF3][\\x80-\\xBF]{3}|\\xF4[\\x80-\\x8F][\\x80-\\xBF]{2})*$",
+      "roles": [],
+      "has_table_attribute": [],
+      "description": "Name AttributeType",
+      "uuid_metaobject": "85897325-c2b3-4ca7-8902-8120300a08dc"
+    },
+    "sequence": 1,
+    "ui_component": "text"
+  }
+],
+"class_references": [],
+"ports": [],
+"description": "This is the e3 Customer Need",
+"coordinates_2d": null,
+"uuid_metaobject": "a802fe49-492f-44bc-9554-fba5a704da33"
+},
+{
+"uuid": "89f1b26e-4dcd-476a-9a22-b1ed75094570",
+"name": "Boundary Element",
+"is_reusable": null,
+"is_abstract": null,
+"attributes": [
+  {
+    "uuid": "d6632c72-89fa-4210-9d01-18e911505608",
+    "name": "Name",
+    "multi_valued": false,
+    "default_value": "\"Name\"",
+    "description": "Name Attribute",
+    "uuid_metaobject": "d6632c72-89fa-4210-9d01-18e911505608",
+    "attribute_type_uuid": "85897325-c2b3-4ca7-8902-8120300a08dc",
+    "attribute_type": {
+      "uuid": "85897325-c2b3-4ca7-8902-8120300a08dc",
+      "name": "String",
+      "pre_defined": true,
+      "regex_value": "^([\\x09\\x0A\\x0D\\x20-\\x7E]|[\\xC2-\\xDF][\\x80-\\xBF]|\\xE0[\\xA0-\\xBF][\\x80-\\xBF]|[\\xE1-\\xEC\\xEE\\xEF][\\x80-\\xBF]{2}|\\xED[\\x80-\\x9F][\\x80-\\xBF]|\\xF0[\\x90-\\xBF][\\x80-\\xBF]{2}|[\\xF1-\\xF3][\\x80-\\xBF]{3}|\\xF4[\\x80-\\x8F][\\x80-\\xBF]{2})*$",
+      "roles": [],
+      "has_table_attribute": [],
+      "description": "Name AttributeType",
+      "uuid_metaobject": "85897325-c2b3-4ca7-8902-8120300a08dc"
+    },
+    "sequence": 1,
+    "ui_component": "text"
+  }
+],
+"class_references": [],
+"ports": [],
+"description": "This is the e3 Boundary Element",
+"coordinates_2d": null,
+"uuid_metaobject": "89f1b26e-4dcd-476a-9a22-b1ed75094570"
+},
+{
+"uuid": "e6ab933c-eec3-4b47-9959-a92a7e7d6401",
+"name": "Actor",
+"is_reusable": null,
+"is_abstract": null,
+"attributes": [
+  {
+    "uuid": "d6632c72-89fa-4210-9d01-18e911505608",
+    "name": "Name",
+    "multi_valued": false,
+    "default_value": "\"Name\"",
+    "description": "Name Attribute",
+    "uuid_metaobject": "d6632c72-89fa-4210-9d01-18e911505608",
+    "attribute_type_uuid": "85897325-c2b3-4ca7-8902-8120300a08dc",
+    "attribute_type": {
+      "uuid": "85897325-c2b3-4ca7-8902-8120300a08dc",
+      "name": "String",
+      "pre_defined": true,
+      "regex_value": "^([\\x09\\x0A\\x0D\\x20-\\x7E]|[\\xC2-\\xDF][\\x80-\\xBF]|\\xE0[\\xA0-\\xBF][\\x80-\\xBF]|[\\xE1-\\xEC\\xEE\\xEF][\\x80-\\xBF]{2}|\\xED[\\x80-\\x9F][\\x80-\\xBF]|\\xF0[\\x90-\\xBF][\\x80-\\xBF]{2}|[\\xF1-\\xF3][\\x80-\\xBF]{3}|\\xF4[\\x80-\\x8F][\\x80-\\xBF]{2})*$",
+      "roles": [],
+      "has_table_attribute": [],
+      "description": "Name AttributeType",
+      "uuid_metaobject": "85897325-c2b3-4ca7-8902-8120300a08dc"
+    },
+    "sequence": 1,
+    "ui_component": "text"
+  }
+],
+"class_references": [],
+"ports": [],
+"description": "this is the class Actor",
+"coordinates_2d": null,
+"uuid_metaobject": "e6ab933c-eec3-4b47-9959-a92a7e7d6401"
+},
+{
+"uuid": "cfcc1539-8a55-4e88-b0b2-d24eafc74854",
+"name": "e3-Value_bendpoint",
+"is_reusable": null,
+"is_abstract": null,
+"attributes": [
+  {
+    "uuid": "d6632c72-89fa-4210-9d01-18e911505608",
+    "name": "Name",
+    "multi_valued": false,
+    "default_value": "\"Name\"",
+    "description": "Name Attribute",
+    "uuid_metaobject": "d6632c72-89fa-4210-9d01-18e911505608",
+    "attribute_type_uuid": "85897325-c2b3-4ca7-8902-8120300a08dc",
+    "attribute_type": {
+      "uuid": "85897325-c2b3-4ca7-8902-8120300a08dc",
+      "name": "String",
+      "pre_defined": true,
+      "regex_value": "^([\\x09\\x0A\\x0D\\x20-\\x7E]|[\\xC2-\\xDF][\\x80-\\xBF]|\\xE0[\\xA0-\\xBF][\\x80-\\xBF]|[\\xE1-\\xEC\\xEE\\xEF][\\x80-\\xBF]{2}|\\xED[\\x80-\\x9F][\\x80-\\xBF]|\\xF0[\\x90-\\xBF][\\x80-\\xBF]{2}|[\\xF1-\\xF3][\\x80-\\xBF]{3}|\\xF4[\\x80-\\x8F][\\x80-\\xBF]{2})*$",
+      "roles": [],
+      "has_table_attribute": [],
+      "description": "Name AttributeType",
+      "uuid_metaobject": "85897325-c2b3-4ca7-8902-8120300a08dc"
+    },
+    "sequence": 1,
+    "ui_component": "text"
+  }
+],
+"class_references": [],
+"ports": [],
+"description": "This is the e3 bendpoint",
+"coordinates_2d": null,
+"uuid_metaobject": "cfcc1539-8a55-4e88-b0b2-d24eafc74854"
+}
+],
+"relationclasses": [
+{
+"uuid": "6ed4cc5e-1ea0-4bc1-83f5-248dfd632399",
+"name": "Connect element",
+"is_reusable": false,
+"is_abstract": false,
+"attributes": [
+  {
+    "uuid": "d6632c72-89fa-4210-9d01-18e911505608",
+    "name": "Name",
+    "multi_valued": false,
+    "default_value": "\"Name\"",
+    "description": "Name Attribute",
+    "uuid_metaobject": "d6632c72-89fa-4210-9d01-18e911505608",
+    "attribute_type_uuid": "85897325-c2b3-4ca7-8902-8120300a08dc",
+    "attribute_type": {
+      "uuid": "85897325-c2b3-4ca7-8902-8120300a08dc",
+      "name": "String",
+      "pre_defined": true,
+      "regex_value": "^([\\x09\\x0A\\x0D\\x20-\\x7E]|[\\xC2-\\xDF][\\x80-\\xBF]|\\xE0[\\xA0-\\xBF][\\x80-\\xBF]|[\\xE1-\\xEC\\xEE\\xEF][\\x80-\\xBF]{2}|\\xED[\\x80-\\x9F][\\x80-\\xBF]|\\xF0[\\x90-\\xBF][\\x80-\\xBF]{2}|[\\xF1-\\xF3][\\x80-\\xBF]{3}|\\xF4[\\x80-\\x8F][\\x80-\\xBF]{2})*$",
+      "roles": [],
+      "has_table_attribute": [],
+      "description": "Name AttributeType",
+      "uuid_metaobject": "85897325-c2b3-4ca7-8902-8120300a08dc"
+    },
+    "sequence": 1,
+    "ui_component": "text"
+  }
+],
+"class_references": [],
+"ports": [],
+"role_from": "41c6289d-4213-4af4-bf3d-c9f4e0191017",
+"role_to": "2f860eed-f78b-42f9-b32d-cf362aae2764",
+"roles": [
+  {
+    "uuid": "41c6289d-4213-4af4-bf3d-c9f4e0191017",
+    "name": "connect_element_from",
+    "class_references": [
+      {
+        "uuid": "a802fe49-492f-44bc-9554-fba5a704da33",
+        "min": 0,
+        "max": 1
+      },
+      {
+        "uuid": "89f1b26e-4dcd-476a-9a22-b1ed75094570",
+        "min": 0,
+        "max": 1
+      }
+    ],
+    "relationclass_references": [],
+    "scenetype_references": [],
+    "port_references": [
+      {
+        "uuid": "2cb72942-2e5c-4493-bc38-d9fc8af6ef70",
+        "min": 0,
+        "max": 1
+      }
+    ],
+    "uuid_metaobject": "41c6289d-4213-4af4-bf3d-c9f4e0191017",
+    "description": null,
+    "coordinates_2d": null,
+  },
+  {
+    "uuid": "2f860eed-f78b-42f9-b32d-cf362aae2764",
+    "name": "connect_element_to",
+    "class_references": [
+      {
+        "uuid": "89f1b26e-4dcd-476a-9a22-b1ed75094570",
+        "min": 0,
+        "max": 1
+      },
+      {
+        "uuid": "a802fe49-492f-44bc-9554-fba5a704da33",
+        "min": 0,
+        "max": 1
+      }
+    ],
+    "relationclass_references": [],
+    "scenetype_references": [],
+    "port_references": [
+      {
+        "uuid": "2cb72942-2e5c-4493-bc38-d9fc8af6ef70",
+        "min": 0,
+        "max": 1
+      }
+    ],
+    "uuid_metaobject": "2f860eed-f78b-42f9-b32d-cf362aae2764",
+    "description": null,
+    "coordinates_2d": null,
+  }
+],
+"relationclass_references": [],
+"description": null,
+"coordinates_2d": null,
+"uuid_metaobject": "6ed4cc5e-1ea0-4bc1-83f5-248dfd632399",
+"uuid_class": "6ed4cc5e-1ea0-4bc1-83f5-248dfd632399",
+"uuid_class_bendpoint": "cfcc1539-8a55-4e88-b0b2-d24eafc74854",
+"bendpoints": "cfcc1539-8a55-4e88-b0b2-d24eafc74854"
+},
+{
+"uuid": "668b8e65-f50b-40a1-9972-4f539f8d0fec",
+"name": "Value Transfer",
+"is_reusable": false,
+"is_abstract": false,
+"attributes": [
+  {
+    "uuid": "d6632c72-89fa-4210-9d01-18e911505608",
+    "name": "Name",
+    "multi_valued": false,
+    "default_value": "\"Name\"",
+    "description": "Name Attribute",
+    "uuid_metaobject": "d6632c72-89fa-4210-9d01-18e911505608",
+    "attribute_type_uuid": "85897325-c2b3-4ca7-8902-8120300a08dc",
+    "attribute_type": {
+      "uuid": "85897325-c2b3-4ca7-8902-8120300a08dc",
+      "name": "String",
+      "pre_defined": true,
+      "regex_value": "^([\\x09\\x0A\\x0D\\x20-\\x7E]|[\\xC2-\\xDF][\\x80-\\xBF]|\\xE0[\\xA0-\\xBF][\\x80-\\xBF]|[\\xE1-\\xEC\\xEE\\xEF][\\x80-\\xBF]{2}|\\xED[\\x80-\\x9F][\\x80-\\xBF]|\\xF0[\\x90-\\xBF][\\x80-\\xBF]{2}|[\\xF1-\\xF3][\\x80-\\xBF]{3}|\\xF4[\\x80-\\x8F][\\x80-\\xBF]{2})*$",
+      "roles": [],
+      "has_table_attribute": [],
+      "description": "Name AttributeType",
+      "uuid_metaobject": "85897325-c2b3-4ca7-8902-8120300a08dc"
+    },
+    "sequence": 1,
+    "ui_component": "text"
+  }
+],
+"class_references": [],
+"ports": [],
+"role_from": "12b28e92-dfe1-49aa-8791-ec9716ebc08b",
+"role_to": "d6c726ac-bd7c-431b-b479-45af888edc40",
+"roles": [
+  {
+    "uuid": "12b28e92-dfe1-49aa-8791-ec9716ebc08b",
+    "name": "value_transfer_from",
+    "class_references": [],
+    "relationclass_references": [],
+    "scenetype_references": [],
+    "port_references": [
+      {
+        "uuid": "a8b6698f-fd6f-4065-9ac7-4b26a3c08af6",
+        "min": 0,
+        "max": 1
+      },
+      {
+        "uuid": "f9f1b276-ae3c-4d9a-91a4-504319ad409c",
+        "min": 0,
+        "max": 1
+      }
+    ],
+    "uuid_metaobject": "12b28e92-dfe1-49aa-8791-ec9716ebc08b",
+    "description": null,
+    "coordinates_2d": null,
+  },
+  {
+    "uuid": "d6c726ac-bd7c-431b-b479-45af888edc40",
+    "name": "value_transfer_to",
+    "class_references": [],
+    "relationclass_references": [],
+    "scenetype_references": [],
+    "port_references": [
+      {
+        "uuid": "a8b6698f-fd6f-4065-9ac7-4b26a3c08af6",
+        "min": 0,
+        "max": 1
+      },
+      {
+        "uuid": "f9f1b276-ae3c-4d9a-91a4-504319ad409c",
+        "min": 0,
+        "max": 1
+      }
+    ],
+    "uuid_metaobject": "d6c726ac-bd7c-431b-b479-45af888edc40",
+    "description": null,
+    "coordinates_2d": null,
+  }
+],
+"relationclass_references": [],
+"description": null,
+"coordinates_2d": null,
+"uuid_metaobject": "668b8e65-f50b-40a1-9972-4f539f8d0fec",
+"uuid_class": "668b8e65-f50b-40a1-9972-4f539f8d0fec",
+"uuid_class_bendpoint": "cfcc1539-8a55-4e88-b0b2-d24eafc74854",
+"bendpoints": "cfcc1539-8a55-4e88-b0b2-d24eafc74854"
+}
+],
+"attributes": [],
+"ports": [],
+"roleSceneRef": [],
+"description": "This is a e3-Value metamodel",
+"coordinates_2d": null,
+"uuid_metaobject": "1fef5ed1-1417-4c41-88ba-280a62b5644a"
+}
