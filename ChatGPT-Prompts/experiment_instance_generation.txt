@@ -1,0 +1,354 @@
+v1:
+
+This is a Metamodel. 
+- A metamodel contains classes, relationclasses, attributes and ports, as well as multiple other properties. 
+- Each attribute has an attribute_type.
+- The classes array contains all the classes of a metamodel.
+- A class has attributes.
+- Each class has a universal unique identifier "UUID".
+- The relationclasses array contains all the relations which are possible between classes. 
+- Each relationclass has a universal unique identifier "UUID".
+- A relationclass has attributes. 
+- A relationclass has a role_from and a role_to reference which is a the UUID of a role. 
+- A relationclass contains a roles array containing two roles which correspond to the role_from UUID and the role_to UUID.
+- The role corresponding to the role_from is specifying the source role and the role corresponding to the role_to is specifying the target role. 
+- Each role contains an array with class_references. This class_references define which class can be connected via the specific role.
+- A class_reference contains a UUID which relates to a class from the classes array.
+- A class_reference contains a min and max property which defines the cardinality of the relation. If the min is "null" and/or the max is "null", there is no cardinality restriction. 
+
+
+Create a plantUML class diagram script for the provided metamodel. 
+- include the classes from the metamodel classes array as classes in the class diagram.
+- Include the relationsclasses from the metamodel relationclasses array as relations between the classes.
+- It is possible that a class is connected via multiple relationclasses and roles. Consider all the combinations.
+- including cardinalities to the relations based on the role_from and role_to.
+- including directed relationsto the relations based on the role_from as start of a relation and role_to as end of a relation.
+- if min or max is null, specify the name and direction of the relation, but do not specify the cardinalities.
+
+Return the full plantUML script as text.
+
+
+--------------------------------------------------------------
+v2:
+
+This is a Metamodel. 
+- A metamodel contains classes, relationclasses, attributes and ports, as well as multiple other properties. 
+- Each attribute has an attribute_type.
+- The classes array contains all the classes of a metamodel.
+- A class has attributes.
+- Each class has a universal unique identifier "UUID".
+- The relationclasses array contains all the relations which are possible between classes. 
+- Each relationclass has a universal unique identifier "UUID".
+- A relationclass has attributes. 
+- A relationclass has a role_from and a role_to reference which is a the UUID of a role. 
+- A relationclass contains a roles array containing two roles which correspond to the role_from UUID and the role_to UUID.
+- The role corresponding to the role_from is specifying the source role and the role corresponding to the role_to is specifying the target role. 
+- Each role contains an array with class_references. This class_references define which class can be connected via the specific role.
+- A class_reference contains a UUID which relates to a class from the classes array.
+- A class_reference contains a min and max property which defines the cardinality of the relation. If the min is "null" and/or the max is "null", there is no cardinality restriction. 
+
+
+Create a plantUML class diagram script for the provided metamodel. 
+- include the classes from the metamodel classes array as classes in the class diagram.
+- Include the relationsclasses from the metamodel relationclasses array as relations between the classes.
+- It is possible that a class is connected via multiple relationclasses and roles. Consider all the combinations.
+- including cardinalities to the relations based on the role_from and role_to.
+- including directed relationsto the relations based on the role_from as start of a relation and role_to as end of a relation.
+- specify the direction, the name and min/max cardinality of all possible relations.
+- if min and/or max is null,  do not specify the cardinalities.
+
+Return the full plantUML script with all classes and all possible relations.
+'only show the code without explanations and surrounded with triple backticks'
+
+---------------------------------------------------------------
+v3
+
+This is a Metamodel. 
+- A metamodel contains classes, relationclasses, attributes and ports, as well as multiple other properties. 
+- Each attribute has an attribute_type.
+- The classes array contains all the classes of a metamodel.
+- A class has attributes.
+- Each class has a universal unique identifier "UUID".
+- The relationclasses array contains all the relations which are possible between classes. 
+- Each relationclass has a universal unique identifier "UUID".
+- A relationclass has attributes. 
+- A relationclass has a role_from and a role_to reference which is a the UUID of a role. 
+- A relationclass contains a roles array containing two roles which correspond to the role_from UUID and the role_to UUID.
+- The role corresponding to the role_from is specifying the source role and the role corresponding to the role_to is specifying the target role. 
+- Each role contains an array with class_references. This class_references define which class can be connected via the specific role.
+- A class_reference contains a UUID which relates to a class from the classes array.
+- A class_reference contains a min and max property which defines the cardinality of the relation. If the min is "null" and/or the max is "null", there is no cardinality restriction. 
+
+
+Create a plantUML class diagram script for the provided metamodel. 
+- include the classes from the metamodel classes array as classes in the class diagram.
+- Include the relationsclasses from the metamodel relationclasses array as relations between the classes.
+- It is possible that a class is connected via multiple relationclasses and roles. Consider all the combinations.
+- including cardinalities to the relations based on the role_from and role_to.
+- including directed relationsto the relations based on the role_from as start of a relation and role_to as end of a relation.
+- specify the direction, the name and min/max cardinality of all possible relations.
+- if min and/or max is null,  do not specify the cardinalities, but still  the direction and the name of the relation.
+
+Return the full plantUML script with all classes and all possible relations.
+'only show the code without explanations and surrounded with triple backticks'
+
+
+---------------------------------------------------------------------------------------------
+
+instances v1: 
+bpmn_metamodel_short.json is a Metamodel. 
+- A metamodel contains classes, relationclasses, attributes and ports, as well as multiple other properties. 
+- Each attribute has an attribute_type.
+- The classes array contains all the classes of a metamodel.
+- A class has attributes.
+- Each class has a universal unique identifier "UUID".
+- The relationclasses array contains all the relations which are possible between classes. 
+- Each relationclass has a universal unique identifier "UUID".
+- A relationclass has attributes. 
+- A relationclass has a role_from and a role_to reference which is a the UUID of a role. 
+- A relationclass contains a roles array containing two roles which correspond to the role_from UUID and the role_to UUID.
+- The role corresponding to the role_from is specifying the source role and the role corresponding to the role_to is specifying the target role. 
+- Each role contains an array with class_references. This class_references define which class can be connected via the specific role.
+- A class_reference contains a UUID which relates to a class from the classes array.
+- A class_reference contains a min and max property which defines the cardinality of the relation. If the min is "null" and/or the max is "null", there is no cardinality restriction. 
+
+The three other files are examples of BPMN instance models according to this metamodel in bpmn_metamodel_short.json.
+- Coordinates_2d define the position on the canvas with x, y, and z coordinates. 
+- Each class_instance in the class_instances array has coordinates_2d. 
+- Each class_instance in the class_instances array has an attribute_instances array with attribute_instances.
+- The relationclasses_instances array contains relationclasses
+- Each relationclass_instance in the relationclass_instances array has an attribute_instances.
+- Each relationclass_instance contains a line_points array, which specifies the UUID of the connected class_instance, as well as the points position with x,y,z.
+- Each relationclass_instance contains a role_instance_from that specifies the uuid_role of the corresponding role in the metamodel and the uuid_has_reference_class_instance. The uuid_has_reference_class_instance defines the uuid of the connected class_instance for this role_instance. 
+- Each relationclass_instance contains a role_instance_to that specifies the uuid_role of the corresponding role in the metamodel and the uuid_has_reference_class_instance. The uuid_has_reference_class_instance defines the uuid of the connected class_instance for this role_instance. 
+
+create a full version of a BPMN in this JSON representation with the following properties:
+- there is a class_instance of the class Start called "start"
+- there are several  Tasks called "Receive Order", "Check credit", "Fulfill order", "Send invoice".
+- there are two exclusiveGateways called "Credit ok?" and "Fulfilled ok?"
+- there are two endEvent called "Order failed" and "Order complete"
+- the "start" and "Receive Order" are connected with a subsequent relationclass
+- the "Receive Order" and "Check credit" are connected with a subsequent relationclass
+- the "Check credit" and "Credit ok?" are connected with a subsequent relationclass
+- the "Credit ok?" and "Order failed" are connected with a subsequent relationclass for the case "credit is not ok"
+- the "Credit ok?" and "Fulfill order" are connected with a subsequent relationclass for the case "credit is ok"
+- the "Fulfill order" and "Fulfilled ok?" are connected with a subsequent relationclass
+- the "Fulfilled ok?" and "Order failed" are connected with a subsequent relationclass for the case "not fulfilled"
+- the "Fulfilled ok?" and "Send invoice" are connected with a subsequent relationclass for the case "fulfilled"
+- the "Send invoice" and "Order complete" are connected with a subsequent relationclass
+Output the json such that the class_instances are nicely arranged with space of at least 2 units in each direction.
+
+
+Return the full JSON script.
+Only show the code without explanations and surrounded with triple backticks'
+
+-------------------------------------------------------
+instances v2
+
+bpmn_metamodel_short.json is a Metamodel. 
+- A metamodel contains classes, relationclasses, attributes and ports, as well as multiple other properties. 
+- Each attribute has an attribute_type.
+- The classes array contains all the classes of a metamodel.
+- A class has attributes.
+- Each class has a universal unique identifier "UUID".
+- The relationclasses array contains all the relations which are possible between classes. 
+- Each relationclass has a universal unique identifier "UUID".
+- A relationclass has attributes. 
+- A relationclass has a role_from and a role_to reference which is a the UUID of a role. 
+- A relationclass contains a roles array containing two roles which correspond to the role_from UUID and the role_to UUID.
+- The role corresponding to the role_from is specifying the source role and the role corresponding to the role_to is specifying the target role. 
+- Each role contains an array with class_references. This class_references define which class can be connected via the specific role.
+- A class_reference contains a UUID which relates to a class from the classes array.
+- A class_reference contains a min and max property which defines the cardinality of the relation. If the min is "null" and/or the max is "null", there is no cardinality restriction. 
+
+The three other files are examples of BPMN instance models according to this metamodel in bpmn_metamodel_short.json.
+- Coordinates_2d define the position on the canvas with x, y, and z coordinates. 
+- Each class_instance in the class_instances array has coordinates_2d. 
+- Each class_instance in the class_instances array has an attribute_instances array with attribute_instances.
+- The relationclasses_instances array contains relationclasses
+- Each relationclass_instance in the relationclass_instances array has an attribute_instances.
+- Each relationclass_instance contains a line_points array, which specifies the UUID of the connected class_instance, as well as the points position with x,y,z.
+- Each relationclass_instance contains a role_instance_from that specifies the uuid_role of the corresponding role in the metamodel and the uuid_has_reference_class_instance. The uuid_has_reference_class_instance defines the uuid of the connected class_instance for this role_instance. 
+- Each relationclass_instance contains a role_instance_to that specifies the uuid_role of the corresponding role in the metamodel and the uuid_has_reference_class_instance. The uuid_has_reference_class_instance defines the uuid of the connected class_instance for this role_instance. 
+
+-create a full version of a BPMN in this JSON representation based on the example instances in the files "BPMN-Start-2Tasks-End.json", "BPMN-Start-parallel-2Tasks-End.json", and "BPMN-Start-Task-End.json".
+- Use the right UUIDs to ensure correct references.
+
+The BPMN diagram has the following properties:
+- there is a startEvent called "start"
+- there are several Tasks called "Receive Order", "Check credit", "Fulfill order", "Send invoice".
+- there are two exclusiveGateways called "Credit ok?" and "Fulfilled ok?"
+- there are two endEvent called "Order failed" and "Order complete"
+- the "start" and "Receive Order" are connected with a subsequent relationclass
+- the "Receive Order" and "Check credit" are connected with a subsequent relationclass
+- the "Check credit" and "Credit ok?" are connected with a subsequent relationclass
+- the "Credit ok?" and "Order failed" are connected with a subsequent relationclass for the case "credit is not ok"
+- the "Credit ok?" and "Fulfill order" are connected with a subsequent relationclass for the case "credit is ok"
+- the "Fulfill order" and "Fulfilled ok?" are connected with a subsequent relationclass
+- the "Fulfilled ok?" and "Order failed" are connected with a subsequent relationclass for the case "not fulfilled"
+- the "Fulfilled ok?" and "Send invoice" are connected with a subsequent relationclass for the case "fulfilled"
+- the "Send invoice" and "Order complete" are connected with a subsequent relationclass
+Output the json such that the class_instances are nicely arranged with space of at least 2 units in each direction.
+
+
+Return the full JSON script.
+Only show the code without explanations and surrounded with triple backticks'
+
+---------------------------------------
+v3
+
+Forget everything you know from old conversations.
+
+bpmn_metamodel_short.json is a Metamodel. 
+- A metamodel contains classes, relationclasses, attributes and ports, as well as multiple other properties. 
+- Each attribute has an attribute_type.
+- The classes array contains all the classes of a metamodel.
+- A class has attributes.
+- Each class has a universal unique identifier "UUID".
+- The relationclasses array contains all the relations which are possible between classes. 
+- Each relationclass has a universal unique identifier "UUID".
+- A relationclass has attributes. 
+- A relationclass has a role_from and a role_to reference which is a the UUID of a role. 
+- A relationclass contains a roles array containing two roles which correspond to the role_from UUID and the role_to UUID.
+- The role corresponding to the role_from is specifying the source role and the role corresponding to the role_to is specifying the target role. 
+- Each role contains an array with class_references. This class_references define which class can be connected via the specific role.
+- A class_reference contains a UUID which relates to a class from the classes array.
+- A class_reference contains a min and max property which defines the cardinality of the relation. If the min is "null" and/or the max is "null", there is no cardinality restriction. 
+
+The three other files are examples of BPMN instance models according to this metamodel in bpmn_metamodel_short.json.
+
+- "BPMN-Start-Task-End.json contains a BPMN model with a class_instance of the class "Start", one class_instance of the class "Task" and one class_instance of the type "End". They are connected via two relationclass_instances of the relationclass type "subsequent".
+- "BPMN-Start-2Tasks-End.json" contains a BPMN model with a class_instance of the class "Start", two class_instances of the class "Task" and one class_instance of the type "End". They are connected via three relationclass_instances of the relationclass type "subsequent".
+- "BPMN-Start-parallel-2Tasks-End.json" contains a BPMN model with a class_instance of the class "Start", two class_instances of the class "ParallelGateway", two class_instances of the class "Task" and one class_instance of the type "End". They are connected via six relationclass_instances of the relationclass type "subsequent".
+
+Instance models have the following properties:
+- uuid properties are used to identify objects with a Universal Unique Identifier.
+- Coordinates_2d define the position on the canvas with x, y, and z coordinates. 
+- Each class_instance in the class_instances array has coordinates_2d. 
+- Each class_instance in the class_instances array has an attribute_instances array with attribute_instances.
+- The relationclasses_instances array contains relationclasses
+- Each relationclass_instance in the relationclass_instances array has an attribute_instances.
+- Each relationclass_instance contains a line_points array, which specifies the UUID of the connected class_instance, as well as the points position with x,y,z.
+- Each relationclass_instance contains a role_instance_from that specifies the uuid_role of the corresponding role in the metamodel and the uuid_has_reference_class_instance. The uuid_has_reference_class_instance defines the uuid of the connected class_instance for this role_instance. 
+- Each relationclass_instance contains a role_instance_to that specifies the uuid_role of the corresponding role in the metamodel and the uuid_has_reference_class_instance. The uuid_has_reference_class_instance defines the uuid of the connected class_instance for this role_instance. 
+
+-create a full version of a BPMN model instance in JSON representation based on the example instances.
+- Use the right uuids to ensure correct references.
+
+The BPMN diagram has the following properties:
+- there is a startEvent called "start"
+- The start has a subsequent Task with the name "Task x".
+- Task x is followed by a Task with the name "Task y".
+- Task y has a subsequent end event. 
+
+Output the json such that the class_instances are nicely arranged with space of at least 2 units in each direction.
+
+
+Return the full JSON script.
+Only show the code without explanations and surrounded with triple backticks'
+
+----------------------------------------------
+
+v4
+
+Forget everything you know from old conversations.
+
+- Read the four provided documents and store them as context information.
+
+bpmn_metamodel_short.json is a Metamodel. 
+- A metamodel contains classes, relationclasses, attributes and ports, as well as multiple other properties. 
+- Each attribute has an attribute_type.
+- The classes array contains all the classes of a metamodel.
+- A class has attributes.
+- Each class has a universal unique identifier "UUID".
+- The relationclasses array contains all the relations which are possible between classes. 
+- Each relationclass has a universal unique identifier "UUID".
+- A relationclass has attributes. 
+- A relationclass has a role_from and a role_to reference which is a the UUID of a role. 
+- A relationclass contains a roles array containing two roles which correspond to the role_from UUID and the role_to UUID.
+- The role corresponding to the role_from is specifying the source role and the role corresponding to the role_to is specifying the target role. 
+- Each role contains an array with class_references. This class_references define which class can be connected via the specific role.
+- A class_reference contains a UUID which relates to a class from the classes array.
+- A class_reference contains a min and max property which defines the cardinality of the relation. If the min is "null" and/or the max is "null", there is no cardinality restriction. 
+
+The three other files are examples of BPMN instance models according to this metamodel in bpmn_metamodel_short.json.
+
+- "BPMN-Start-Task-End.json contains a BPMN model with a class_instance of the class "Start", one class_instance of the class "Task" and one class_instance of the type "End". They are connected via two relationclass_instances of the relationclass type "subsequent".
+- "BPMN-Start-2Tasks-End.json" contains a BPMN model with a class_instance of the class "Start", two class_instances of the class "Task" and one class_instance of the type "End". They are connected via three relationclass_instances of the relationclass type "subsequent".
+- "BPMN-Start-parallel-2Tasks-End.json" contains a BPMN model with a class_instance of the class "Start", two class_instances of the class "ParallelGateway", two class_instances of the class "Task" and one class_instance of the type "End". They are connected via six relationclass_instances of the relationclass type "subsequent".
+
+Instance models have the following properties:
+- uuid properties are used to identify objects with a Universal Unique Identifier.
+- Coordinates_2d define the position on the canvas with x, y, and z coordinates. 
+- Each class_instance in the class_instances array has coordinates_2d. 
+- Each class_instance in the class_instances array has an attribute_instances array with attribute_instances.
+- The relationclasses_instances array contains relationclasses
+- Each relationclass_instance in the relationclass_instances array has an attribute_instances.
+- Each relationclass_instance contains a line_points array, which specifies the UUID of the connected class_instance, as well as the points position with x,y,z.
+- Each relationclass_instance contains a role_instance_from that specifies the uuid_role of the corresponding role in the metamodel and the uuid_has_reference_class_instance. The uuid_has_reference_class_instance defines the uuid of the connected class_instance for this role_instance. 
+- Each relationclass_instance contains a role_instance_to that specifies the uuid_role of the corresponding role in the metamodel and the uuid_has_reference_class_instance. The uuid_has_reference_class_instance defines the uuid of the connected class_instance for this role_instance. 
+
+-create a full version of a BPMN model instance in JSON representation based on the example instances.
+- Use the uuid from the metamodel to ensure correct references.
+- For all new instances generate a new UUIDv4 at the beginning and reuse this UUID for linking the instances.
+
+The BPMN diagram has the following properties:
+- there is a startEvent called "start"
+- The start has a subsequent Task with the name "Task x".
+- Task x is followed by a Task with the name "Task y".
+- Task y has a subsequent end event. 
+
+-First generate all used uuids.
+-Output the json such that the class_instances are nicely arranged with space of at least 2 units in each direction.
+-Return the full JSON script. Only show the code without explanations and surrounded with triple backticks'
+
+
+--------------------------------------------
+v5 normal chat
+
+
+- Read the provided documents and store them as context information.
+
+bpmn_metamodel_short.json is a Metamodel. 
+- A metamodel contains classes, relationclasses, attributes and ports, as well as multiple other properties. 
+- Each attribute has an attribute_type.
+- The classes array contains all the classes of a metamodel.
+- A class has attributes.
+- Each class has a universal unique identifier "UUID".
+- The relationclasses array contains all the relations which are possible between classes. 
+- Each relationclass has a universal unique identifier "UUID".
+- A relationclass has attributes. 
+- A relationclass has a role_from and a role_to reference which is a the UUID of a role. 
+- A relationclass contains a roles array containing two roles which correspond to the role_from UUID and the role_to UUID.
+- The role corresponding to the role_from is specifying the source role and the role corresponding to the role_to is specifying the target role. 
+- Each role contains an array with class_references. This class_references define which class can be connected via the specific role.
+- A class_reference contains a UUID which relates to a class from the classes array.
+- A class_reference contains a min and max property which defines the cardinality of the relation. If the min is "null" and/or the max is "null", there is no cardinality restriction. 
+
+
+- "BPMN-Start-parallel-2Tasks-End.json" contains a BPMN instance model according to this metamodel in bpmn_metamodel_short.json. The model contains a class_instance of the class "Start", two class_instances of the class "ParallelGateway", two class_instances of the class "Task" and one class_instance of the type "End". They are connected via six relationclass_instances of the relationclass type "subsequent".
+
+Instance models have the following properties:
+- uuid properties are used to identify objects with a Universal Unique Identifier.
+- Coordinates_2d define the position on the canvas with x, y, and z coordinates. 
+- Each class_instance in the class_instances array has coordinates_2d. 
+- Each class_instance in the class_instances array has an attribute_instances array with attribute_instances.
+- The relationclasses_instances array contains relationclasses
+- Each relationclass_instance in the relationclass_instances array has an attribute_instances.
+- Each relationclass_instance contains a line_points array, which specifies the UUID of the connected class_instance, as well as the points position with x,y,z.
+- Each relationclass_instance contains a role_instance_from that specifies the uuid_role of the corresponding role in the metamodel and the uuid_has_reference_class_instance. The uuid_has_reference_class_instance defines the uuid of the connected class_instance for this role_instance. 
+- Each relationclass_instance contains a role_instance_to that specifies the uuid_role of the corresponding role in the metamodel and the uuid_has_reference_class_instance. The uuid_has_reference_class_instance defines the uuid of the connected class_instance for this role_instance. 
+
+
+-create a full version of a BPMN model instance in JSON representation based on the example instance.
+- Use the uuid from the metamodel to ensure correct references.
+- For all new instances generate a new UUIDv4 at the beginning and reuse this UUID for linking the instances.
+
+The BPMN diagram has the following properties:
+- there is a Start with the name attribute "Start"
+- there is a Task with the name attribute "Task x"
+- there is an End with the name attribute "End"
+
+
+-Output the json such that the class_instances are nicely arranged with space of at least 2 units in each direction.
+-Return the full JSON script. Only show the code without explanations and surrounded with triple backticks'
